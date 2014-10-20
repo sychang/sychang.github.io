@@ -19,8 +19,9 @@ img{
 	font-size: 24px;
 	margin-left: auto;
 	margin-right: auto;
-	width: 600px;
-	margin-top: 120px;
+	width: 80%;
+	margin-top: 50px;
+	color: #779;
 }
 
 #temp-image{
@@ -1723,6 +1724,57 @@ a:hover{
 }
 
 /*end flare*/
+
+
+/*gradient */
+#gradient-header{
+	margin-left: auto;
+	margin-right: auto;
+	width: 380px;
+	margin-top: 36px;
+	margin-bottom: 20px;
+}
+
+#gradient-container{
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+}
+
+#gradient-summary{
+	font-weight: 100;
+	font-size: 16px;
+	line-height: 26px;
+	margin-top: 20px;
+}
+
+#gradient-problem-header{
+	font-size: 24px;
+	margin-top: 20px;
+	margin-bottom: 8px;
+}
+
+#gradient-problem{
+	font-size: 16px;
+	line-height: 26px;
+	margin-bottom: 20px;
+	font-weight: 100;
+}
+
+#gradient-proposal{
+	font-size: 24px;
+	margin-top: 20px;
+	margin-bottom: 8px;
+}
+
+#gradient-proposal-text{
+	font-size: 16px;
+	line-height: 26px;
+	margin-bottom: 20px;
+	font-weight: 100;	
+}
+
+/*end gradient*/
 
 
 
