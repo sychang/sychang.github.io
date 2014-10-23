@@ -31,6 +31,21 @@ img{
 }
 
 
+#back-to-port{
+	margin: 30px auto 80px auto;
+	width: 178px;
+	color: #779;
+	font-size: 20px;
+	transition-duration: .4s;
+}
+
+#back-to-port:hover{
+	color: #333;
+	transition-duration: .4s;
+
+}
+
+
 
 /*FOR HOME PAGE big*/
 @media (min-width: 450px){
@@ -483,13 +498,15 @@ a:hover{
 	text-align: center;
 	margin-top: 30px;
 	font-size: 20px;
-	color: #555;
+	color: #779;
 	font-weight: 400;
 	margin-bottom: 70px;	
+	transition-duration: .4s;
 }
 
 #go-to-port:hover{
-	color: #111;	
+	color: #333;	
+	transition-duration: .4s;
 }
 
 /*PORTFOLIO NEED RESPONSIVE FOR BIG*/
@@ -1431,7 +1448,7 @@ a:hover{
 }
 
 #video5{
-	margin-bottom: 70px;
+	margin-bottom: 10px;
 	margin-right: auto;
 	margin-left: auto;
 	width: 500px;
@@ -1505,7 +1522,7 @@ a:hover{
 
 
 #faces2{
-	margin-bottom: 100px;
+	margin-bottom: 10px;
 	margin-right: auto;
 	margin-left: auto;
 	width: 500px;
@@ -1539,10 +1556,13 @@ a:hover{
 	margin-bottom: 30px;
 	color: #779;
 	font-size: 20px;
+	transition-duration: .4s;
+
 }
 
 #prod-port:hover{
 	color: #222;
+	transition-duration: .4s;
 }
 
 #trailer-text{
@@ -1573,7 +1593,7 @@ a:hover{
 	margin-right: auto;
 	margin-left: auto;
 	width: 480px;
-	margin-bottom: 100px;
+	margin-bottom: 10px;
 
 }
 /*end film*/
@@ -1698,7 +1718,7 @@ a:hover{
 #flare-screen-shots{
 	margin-right: auto;
 	margin-left: auto;
-	width: 600px;
+	/*width: 600px;*/
 }
 
 #flare-final-pics-header{
@@ -1710,7 +1730,7 @@ a:hover{
 #flare-final-pics-container{
 	margin-right: auto;
 	margin-left: auto;
-	width: 95%;
+	width: 100%;
 	margin-top: 8px;
 }
 
@@ -1719,7 +1739,7 @@ a:hover{
 	margin-left: auto;
 	display: inline-block;
 	margin-right: 20px;
-	margin-bottom: 50px;
+	margin-bottom: 10px;
 	margin-top: 8px;
 }
 
@@ -1772,6 +1792,23 @@ a:hover{
 	line-height: 26px;
 	margin-bottom: 20px;
 	font-weight: 100;	
+}
+
+#gradient-link{
+	color: #45B648;
+	font-size: 20px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 235px;
+	transition-duration: .4s;
+
+}
+
+#gradient-link:hover{
+	color: #779;
+	transition-duration: .4s;
 }
 
 /*end gradient*/
