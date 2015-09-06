@@ -1,0 +1,346 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Serena // Reverse Polaroid</title>
+  <meta name="title" content="Serena Chang" />
+  <meta name="description" content="Serena Chang portfolio website" />
+  <link rel="image_src" href="/images/notify_better_image.png" />
+
+  <meta content="http://www.serenachang.me" property="og:url" />
+  <link rel="shortcut icon" id="favicon" href="./images/favicon.png"> 
+  <meta name="author" content="Serena Chang">
+  <link rel="canonical" href="http://www.serenachange.me/index.html" />
+
+  <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,200italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato:100,300,700,100italic' rel='stylesheet' type='text/css'>
+
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script type="text/javascript" src="jquery.onepage-scroll.js"></script>
+
+  <style>
+
+    body {
+      background: #ffdd17;
+      text-align: left;
+      font-family: 'Source Sans Pro';
+      -webkit-font-smoothing: antialiased;
+      padding: none;
+      margin: 0px;
+    }
+
+      a {
+      color: inherit;
+      text-decoration: none;
+      -o-transition:.3s;
+      -ms-transition:.3s;
+      -moz-transition:.3s;
+      -webkit-transition:.3s;
+      transition:.3s;
+      }
+
+      a:link{
+        text-decoration: none;
+
+      }
+
+      a:visited{
+        text-decoration: none;
+      }
+
+      a:hover{
+        text-decoration: none;
+      }
+
+
+
+
+    #page-container {
+      width: 90%;
+      background: #f9f5e5;
+      margin: 0px auto;
+    }
+
+    #text-container {
+      width: 84%;
+      margin: 0px auto;
+      padding-bottom: 24px;
+/*      margin: 40px auto 50px auto;
+*/    }
+
+
+    #title {
+      font-size: 48px;
+      letter-spacing: 5px;
+      color: rgba(0,0,0,.75);
+      font-weight: 700;
+      width: 505px;
+      margin-right: auto;
+      margin-left: auto;
+      padding-top: 50px;
+      text-align: center;
+    }
+
+
+
+    #subtitle {
+      width: 865px;
+      color: #a58d00;
+      font-size: 24px;
+      font-weight: 700;
+      margin: 0px auto 36px auto;
+    }
+
+    .section-heading {
+      font-weight: 700;
+      font-size: 30px;
+      color: rgba(0,0,0,.75);
+      margin-top: 24px;
+      margin-bottom: 18px;
+    }
+
+    .section-title {
+      font-weight: 700;
+      font-size: 18px;
+      color: #a58d00;
+    }
+
+    .section-text {
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    .section-text strong {
+      color: #a58d00;
+    }
+
+    .section-text i {
+      font-size: 18px;
+    }
+
+    .section-text ul li {
+      list-style-position: outside;
+      text-indent: -17px;
+      margin-left: 9px;
+    }
+
+    .section-text li:before {
+      content: "■ ";
+      color: #a58d00;
+    }
+
+    #cover-images {
+      margin-bottom: 24px;
+    }
+
+    .process-images img {
+      width: 23%;
+      margin: 8px 0px 8px 1%;
+    }
+
+    .images img {
+      width: 100%;
+    }
+
+    #back-to-main {
+      text-align: center;
+      padding-top: 16px;
+      color: rgba(0,0,0,.75);
+      font-weight: 700;
+      font-size: 18px;
+    }
+
+    #back-to-main a:hover {
+      color: #a58d00;
+    }
+
+    .footer {
+      background: white;
+    }
+
+    .footer a {
+      box-sizing: border-box;
+      color: #f9f5e5;
+      height: auto;
+      text-align: center;
+      float: left;
+      width: 50%;
+      display: inline-block;
+      padding: 20px;
+      background: #a58d00;
+
+    }
+
+    .footer a:hover {
+      background: #d2b300;
+    }
+
+
+    .footer a.previous {
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .footer a.previous em {
+    }
+
+
+    .footer a.next {
+      font-size: 18px;
+      font-weight: 700;
+      border-left: 2px solid #f9f5e5;
+    }
+
+    .footer a.next em {
+    }
+
+    @media (max-width: 1045px) {
+      #subtitle {
+        width: 566px;
+        text-align: center;
+      }
+    }
+
+
+    @media (max-width: 713px) {
+/*      #title {
+        font-size: 36px;
+        width: 512px;
+        text-align: center;
+      }
+*/
+      #subtitle {
+        font-size: 20px;
+        width: 478px;
+        text-align: center;
+      }
+
+      .footer a.previous {
+        height: 86px;
+      }
+
+/*change if it's not a cover photo, different formatting*/
+/*      .images img {
+        width: 30%;
+      }
+*/    }
+
+    @media (max-width: 600px) {
+      #page-container {
+        width: 100%
+      }
+
+      #title {
+        width: 305px;
+        font-size: 45px;
+        text-align: center;
+      }
+
+      #subtitle {
+        width: 332px;
+        text-align: center;
+      }
+
+      .section-text li {
+        text-indent: -20px;
+      }
+
+/*change this if it's not a voer photo*/
+      .process-images img {
+        width: 100%;
+        padding-bottom: 10px;
+      }
+    }
+
+/*FIX THIS FOR DIFFERENT PROJECT TITLE LENGTHS*/
+    @media (max-width: 425px) {
+      .footer a.previous {
+        height: 109px;
+      }
+
+    }
+
+
+  </style>
+
+</head>
+
+
+
+<body>
+  <div id="page-container">
+    <div id="text-container">
+      <div id="title">REVERSE POLAROID</div>
+      <div id="subtitle">Counterfunctional Camera Design // Design Research and Front-End Development</div>
+
+      <div id="cover-images">
+        <span class="images"><img src="./images/james-noback.png"/></span>
+      </div>
+
+
+      <div class="section-heading">Project Summary</div>
+      <div class="section-text"><strong>Research opportunity: </strong>Today, people have ridiculous power over what they do with their phone's camera.  Photo filtering, stitching, and sharing can be done in a matter of seconds.  We wanted to research what happens when we strip people of that freedom and power.  Our Android camera app allows photos to be viewed instantly, but pixelate gradually as they are displayed.  The only way to keep the photos from deteriorating is to not view them.  Testing users' response to these contradicting choices will gauge human behavior when technology's common positive features are restricted or lacking and explore the realm of digital limitation. 
+
+      <p><strong>My role: </strong>I worked with Human-Computer Interaction Ph.D. student James Pierce under Berkeley EECS professor, Eric Paulos, in the Berkeley Center for New Media. to design the user experience and build the front end app interface.  We explored the camera gallery display and photo viewing interactions that would create both an intuitive, yet counterfunctional experience.</p>
+      </div>
+
+
+      <div class="section-heading">The Process</div>
+
+      <div class="section-title">Questions we wanted to answer</div>
+      <div class="section-text">
+        <ul style="list-style-type:none"> <!-- either square or default -->
+          <li>&nbsp;What kinds of people would actually want to use this?</li>
+          <li>&nbsp;When would someone want to take a photo with this app?</li>
+          <li>&nbsp;How does this app make our users feel?  What do they find is the worst part?</li>
+        </ul>
+      </div>
+
+
+      <div class="section-text"><strong>How we designed the app: </strong>
+        The user interaction behind the app is straightforward: take photos with the phone's camera and view them in the app's gallery. In addition to designing the icons and interfaces for these tasks, we considered the first time use, or onboarding experience, of the app. We wanted to figure out how much of the functionality should be laid out, and how much should be left up to the user to find out on their own?
+
+        <p>I spent the most time toying with the photo gallery, iterating over different thumbnail and caption designs to see what was most effective in hinting at the photo, but not allowing a clear view of it.  We played around with everything from text only displays to redacted, blurred, tiled, or miniaturized thumbnails <i>(some iterations shown below)</i>. </p> 
+
+      <div class="process-images">
+        <img src="./images/james-process0.png">
+        <img src="./images/james-process1.png">
+        <img src="./images/james-process2.png">
+        <img src="./images/james-process3.png">
+      </div>
+
+        <p>We settled on the miniaturized thumbnails because their consistency with existing camera apps creates an intuitive function.  However, they are also counterfunctional because the user would not be able to see the photo clearly.  I helped tie the back end pixellation code to the front end icons and thumbnail gallery.</p>
+
+        <p>User testing will reveal what gallery layout finds the best balance of intuitive and counterfunctional, and the extent of the onboarding necessary to create a more seamless app experience.  Ultimately, the app will test the limits of creative restriction and provide insight into human response when technology is "not on your side."</p>
+      </div>
+
+      <div class="section-heading">What I Learned</div>
+      <div class="section-text">
+          <p><strong>Research purpose:</strong> The goal of this research was not to create something that was necessarily marketable or universally desired, but to test design limits and research human interaction with technology on a more theoretical level. </p>
+      </div>
+
+      <div id="back-to-main"><a href="index.html#4" target="_self">Back To Main Page</a></div>
+
+
+
+    </div>
+      <div class="footer">
+        <a class="previous" href="ibm.html">
+          Previous Project: 
+          <em>&nbsp;IBM Design</em>
+        </a>
+
+        <a class="next" href="dc.html">
+          Next Project: 
+          <em>&nbsp;Berkeley Design Council</em>
+        </a>
+      </div>
+
+  </div>
+</body>
+</html>
+
+
+
+

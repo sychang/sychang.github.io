@@ -1,0 +1,344 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Serena // IBM Design</title>
+  <meta name="title" content="Serena Chang" />
+  <meta name="description" content="Serena Chang portfolio website" />
+  <link rel="image_src" href="/images/notify_better_image.png" />
+
+  <meta content="http://www.serenachang.me" property="og:url" />
+  <link rel="shortcut icon" id="favicon" href="./images/favicon.png"> 
+  <meta name="author" content="Serena Chang">
+  <link rel="canonical" href="http://www.serenachange.me/index.html" />
+
+  <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,200italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato:100,300,700,100italic' rel='stylesheet' type='text/css'>
+
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script type="text/javascript" src="jquery.onepage-scroll.js"></script>
+
+  <style>
+
+    body {
+      background: #74b6df;
+      text-align: left;
+      font-family: 'Source Sans Pro';
+      -webkit-font-smoothing: antialiased;
+      padding: none;
+      margin: 0px;
+    }
+
+      a {
+      color: inherit;
+      text-decoration: none;
+      -o-transition:.3s;
+      -ms-transition:.3s;
+      -moz-transition:.3s;
+      -webkit-transition:.3s;
+      transition:.3s;
+      }
+
+      a:link{
+        text-decoration: none;
+
+      }
+
+      a:visited{
+        text-decoration: none;
+      }
+
+      a:hover{
+        text-decoration: none;
+      }
+
+
+
+
+    #page-container {
+      width: 90%;
+      background: #eff3f4;
+      margin: 0px auto;
+    }
+
+    #text-container {
+      width: 84%;
+      margin: 0px auto;
+      padding-bottom: 24px;
+/*      margin: 40px auto 50px auto;
+*/    }
+
+
+    #title {
+      font-size: 48px;
+      letter-spacing: 5px;
+      color: black;
+      font-weight: 700;
+      width: 650px;
+      margin-right: auto;
+      margin-left: auto;
+      padding-top: 50px;
+    }
+
+
+
+    #subtitle {
+      width: 575px;
+      color: rgba(6, 86, 134, 1);
+      font-size: 24px;
+      font-weight: 700;
+      margin: 0px auto 36px auto;
+    }
+
+    .section-heading {
+      font-weight: 700;
+      font-size: 30px;
+      color: black;
+      margin-top: 24px;
+      margin-bottom: 18px;
+    }
+
+    .section-title {
+      font-weight: 700;
+      font-size: 18px;
+      color: rgba(6, 86, 134, 1);
+    }
+
+    .section-text {
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    .section-text strong {
+      color: rgba(6, 86, 134, 1);
+    }
+
+    .section-text i {
+      font-size: 16px;
+    }
+
+    .section-text li {
+      text-indent: -8px;
+    }
+
+    .section-text li:before {
+      content: "■ ";
+      color: rgba(6, 86, 134, 1);
+    }
+
+    #cover-images {
+      margin-bottom: 24px;
+    }
+
+    .process-images img {
+      width: 30.6%;
+      margin: 24px 1% 8px 1%;
+    }
+
+    .images img {
+      width: 100%;
+    }
+
+    #back-to-main {
+      text-align: center;
+      padding-top: 16px;
+      color: #76b7de;
+      font-weight: 700;
+      font-size: 18px;
+    }
+
+    #back-to-main a:hover {
+      color: rgba(6, 86, 134, 1);
+    }
+
+    .footer {
+      background: white;
+    }
+
+    .footer a {
+      box-sizing: border-box;
+      color: #dfecef;
+      height: auto;
+      text-align: center;
+      float: left;
+      width: 50%;
+      display: inline-block;
+      padding: 20px;
+      background: rgba(6, 86, 134, 1);
+
+    }
+
+    .footer a:hover {
+      background: #4F9ACA;
+    }
+
+
+    .footer a.previous {
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .footer a.previous em {
+    }
+
+
+    .footer a.next {
+      font-size: 18px;
+      font-weight: 700;
+      border-left: 2px solid #dfecef;
+    }
+
+    .footer a.next em {
+    }
+
+
+    @media (max-width: 756px) {
+      #title {
+        font-size: 36px;
+        width: 512px;
+      }
+
+      #subtitle {
+        font-size: 20px;
+        width: 478px;
+      }
+
+      .footer a.next {
+        height: 86px;
+      }
+
+/*change if it's not a cover photo, different formatting*/
+/*      .images img {
+        width: 30%;
+      }
+*/    }
+
+    @media (max-width: 600px) {
+      #page-container {
+        width: 100%
+      }
+
+      #title {
+        width: 305px;
+        font-size: 45px;
+      }
+
+      #subtitle {
+        width: 332px;
+        text-align: center;
+      }
+
+      .section-text li {
+        text-indent: -20px;
+      }
+
+/*change this if it's not a voer photo*/
+      .process-images img {
+        width: 100%;
+        padding-bottom: 10px;
+      }
+    }
+
+/*FIX THIS FOR DIFFERENT PROJECT TITLE LENGTHS*/
+/*    @media (max-width: 535px) {
+      .footer a.previous {
+        height: 86px;
+      }
+
+    }
+*/
+
+  </style>
+
+</head>
+
+
+
+<body>
+  <div id="page-container">
+    <div id="text-container">
+      <div id="title">IBM DESIGN: MAELSTROM</div>
+      <div id="subtitle">Creating Smarter Auto Insurance With IoT // UX Design</div>
+
+      <div id="cover-images">
+        <span class="images"><img src="./images/ibm-cover3.png"/></span>
+      </div>
+
+
+      <div class="section-heading">Project Summary</div>
+      <div class="section-text"><strong>Impact and Opportunity: </strong>18,000 car crashes happen everyday in the U.S., alone.  The simplicity of price shopping has made insurance a commodity.  For seven weeks, my team in Austin, TX worked explored ways in which IoT and connected vehicles could reduce these accident numbers and help insurance companies stand out.  
+
+        <p><i>**I cannot showcase our deliverables online because of Non-Disclosure Agreements, but I am happy to discuss the collaboration, development, and learning process in person.</i></p>
+
+      <p><strong>My Role: </strong>I entered the Maelstrom program with the title of UX Designer (UXD) and Front-End Developer (FED).  I spent the first part of the project conducting user interviews, then worked with teammates to mock up and test our ideas.  Because IBM Design emphasizes the four disciplines of user research, visual design, UXD, and FED, I was able to gain skills in visual communication and information architecture.  I also learned methods to synthesize qualitative research in order to back up personas and their pain points with quantitative trends.  </p>
+      </div>
+
+
+      <div class="section-heading">The Process</div>
+
+
+      <div class="section-title">Questions we wanted to answer</div>
+      <div class="section-text">
+        <ul style="list-style-type:none"> <!-- either square or default -->
+          <li>&nbsp;How do we make people actually want to interact with their auto insurance companies?</li>
+          <li>&nbsp;How do we use data in a way that's not creepy?</li>
+          <li>&nbsp;How can we create drivers who are more mindful on the road and understanding of their vehicles?</li>
+        </ul>
+      </div>
+
+      <div class="section-title">Questions we asked our users</div>
+      <div class="section-text">
+        <ul style="list-style-type:none">
+          <li>&nbsp;What frustrates you the most about your auto insurance company?</li>
+          <li>&nbsp;What bothers you when you're driving?</li>
+          <li>&nbsp;If you've had to file a claim, what was the cause?  What was the worst part about the process?</li>
+        </ul>
+      </div>
+
+      <div class="section-text"><strong>How we developed our solution: </strong>For the first couple weeks on the project, we interviewed over 20 users from both the insurance company (our business client) and policy holder (our end customer) side of the auto insurance industry.  We sought to identify the source of their frustrations with existing auto insurance.  Lots and lots and lots of sticky notes later...
+
+      <div class="process-images">
+        <img src="./images/ibm-process2.png">
+        <img src="./images/ibm-process3.png">
+        <img src="./images/ibm-process1.png">
+      </div>
+
+      <p>We affinitized our interview findings, allowing us to create personas.  Empathy mapping our personas based on things they say, think, do, and feel helped us identify pain points and user needs.  The next step was to ideate around the pain points to ensure any solution we developed would satisfy a user need.  We prioritized and combined our ideas to create three main user experiences anchored on the goal of promoting safe driving and peace of mind.</p>
+      <p>For the latter half of the program, we prototyped and user tested our ideas iteratively, frequently asking our users, "Would you actually use something like this?"  When the answer was "ehhh," or "no," we knew we had our work cut out for us.  We took feedback on our concepts and mockups to restructure our information flow, often scrapping an entire idea or expanding its presence.</p>
+      </div>
+
+      <div class="section-heading">What I Learned</div>
+      <div class="section-text">
+          <p><strong>Project scoping:</strong> Clearly stating pain points and needs helps narrow down a greenfield project and create solutions that are better focused and unified.</p>
+          <p><strong>Teamwork:</strong> Active listening and not interrupting can sort out conflicting opinions more civilly and foster creative collaboration.</p>
+          <p><strong>Visual communcation and information architecture:</strong> Use grids!  Answer the question:  What is someone trying to accomplish when they use this?  Let them do it as efficiently as possible.</p>
+          <p><strong>Getting feedback:</strong> Navigate conflicting feedback by understanding its context, then going with instinct.</p>
+          <p><strong>Presentation:</strong> How we communicate an idea or design is more important than the idea or design, itself.</p>
+          <p><strong>Tacos:</strong> "The Democrat" from Torchy's Tacos is the bombest taco ever.</p>
+      </div>
+
+      <div id="back-to-main"><a href="index.html#3" target="_self">Back To Main Page</a></div>
+
+
+
+    </div>
+      <div class="footer">
+        <a class="previous" href="film.html">
+          Previous Project: 
+          <em>&nbsp;Film and Video Editing</em>
+        </a>
+
+        <a class="next" href="james.html">
+          Next Project: 
+          <em>&nbsp;Reverse Polaroid</em>
+        </a>
+      </div>
+
+  </div>
+</body>
+</html>
+
+
+
+

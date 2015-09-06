@@ -1,51 +1,395 @@
 <html>
 <head>
-<title>Serena | Film</title>
-<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="assets/styles.css" />
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="assets/script.js"></script>
+  <meta charset="utf-8">
+  <title>Serena // Film and Video Editing</title>
+  <meta name="title" content="Serena Chang" />
+  <meta name="description" content="Serena Chang portfolio website" />
+  <link rel="image_src" href="/images/notify_better_image.png" />
+
+  <meta content="http://www.serenachang.me" property="og:url" />
+  <link rel="shortcut icon" id="favicon" href="./images/favicon.png"> 
+  <meta name="author" content="Serena Chang">
+  <link rel="canonical" href="http://www.serenachange.me/index.html" />
+
+  <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,200italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato:100,300,700,100italic' rel='stylesheet' type='text/css'>
+
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script type="text/javascript" src="jquery.onepage-scroll.js"></script>
+
+  <style>
+
+    body {
+      background: #605175;
+      text-align: left;
+      font-family: 'Source Sans Pro';
+      -webkit-font-smoothing: antialiased;
+      padding: none;
+      margin: 0px;
+    }
+
+      a {
+      color: inherit;
+      text-decoration: none;
+      -o-transition:.3s;
+      -ms-transition:.3s;
+      -moz-transition:.3s;
+      -webkit-transition:.3s;
+      transition:.3s;
+      }
+
+      a:link{
+        text-decoration: none;
+
+      }
+
+      a:visited{
+        text-decoration: none;
+      }
+
+      a:hover{
+        text-decoration: none;
+      }
+
+
+
+
+    #page-container {
+      width: 90%;
+      background: #f9f7fc;
+      margin: 0px auto;
+    }
+
+    #text-container {
+      width: 84%;
+      margin: 0px auto;
+      padding-bottom: 24px;
+/*      margin: 40px auto 50px auto;
+*/    }
+
+
+    #title {
+      font-size: 48px;
+      letter-spacing: 5px;
+      color: black;
+      font-weight: 700;
+      width: 638px;
+      margin-right: auto;
+      margin-left: auto;
+      padding-top: 50px;
+      text-align: center;;
+    }
+
+
+    #subtitle {
+      width: 528px;
+      color: #34234B;
+      font-size: 24px;
+      font-weight: 700;
+      margin: 0px auto 36px auto;
+      text-align: center;
+    }
+
+    .video {
+      position: relative;
+      padding-top: 315px;
+      margin: 16px auto;
+      width: 420px;
+      padding-bottom: 16px;
+    }
+
+    .video iframe, .video object, .video embed {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .section-heading {
+      font-weight: 700;
+      font-size: 30px;
+      color: black;
+      margin-top: 24px;
+      margin-bottom: 18px;
+    }
+
+
+    .section-title {
+      font-weight: 700;
+      font-size: 18px;
+      color: #34234B;
+    }
+
+    .section-text {
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    .section-text strong {
+      color: #34234B;
+    }
+
+    .section-text i {
+      font-size: 16px;
+    }
+
+    .section-text ul li {
+      list-style-position: outside;
+      text-indent: -17px;
+      margin-left: 9px;
+    }
+
+    .section-text li:before {
+      content: "■ ";
+      color: #34234B;
+    }
+
+    #cover-images {
+      margin-bottom: 24px;
+    }
+
+    .process-images img {
+      width: 30%;
+      margin: -8px 1% 8px 1%;
+    }
+
+    .images img {
+      width: 100%;
+    }
+
+    #glass-infographic img {
+      width: 100%;
+    }
+
+
+    #back-to-main {
+      text-align: center;
+      padding-top: 16px;
+      color: #605175;
+      font-weight: 700;
+      font-size: 18px;
+    }
+
+    #back-to-main a:hover {
+      color: #34234B;
+    }
+
+    .footer {
+      background: white;
+    }
+
+    .footer a {
+      box-sizing: border-box;
+      color: #f9f7fc;
+      height: auto;
+      text-align: center;
+      float: left;
+      width: 50%;
+      display: inline-block;
+      padding: 20px;
+      background: #34234B;
+
+    }
+
+    .footer a:hover {
+      background: #493A5E;
+    }
+
+
+    .footer a.previous {
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .footer a.previous em {
+    }
+
+
+    .footer a.next {
+      font-size: 18px;
+      font-weight: 700;
+      border-left: 2px solid #f9f7fc;
+    }
+
+    .footer a.next em {
+    }
+
+    @media (max-width: 775px) {
+      #title {
+        width: 500px;
+        text-align: center;
+      }
+      #subtitle {
+        width: 485px;
+        text-align: center;
+        font-size: 22px;
+      }
+
+     }
+
+
+
+
+/*change if it's not a cover photo, different formatting*/
+/*      .images img {
+        width: 30%;
+      }
+*/    
+/*}*/
+
+    @media (max-width: 600px) {
+      #page-container {
+        width: 100%
+      }
+
+      #title {
+        width: 305px;
+        font-size: 36px;
+      }
+
+      #subtitle {
+        width: 332px;
+        font-size: 20px;
+        text-align: center;
+      }
+
+      .section-text li {
+        text-indent: -20px;
+      }
+
+/*change this if it's not a voer photo*/
+      .process-images img {
+        width: 100%;
+        padding-bottom: 10px;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .video {
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 56px;
+        height: 0;
+        overflow: hidden;
+        width: 100%;
+      }
+
+      .video iframe, .video object, .video embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        max-width: 420px;
+        max-height: 315px;
+        width: 100%;
+        height: 100%;
+      }
+
+    }
+
+/*     @media (max-width: 421px) {
+      .footer a.next {
+        height: 109px;
+      }
+
+    }
+*/
+
+/*FIX THIS FOR DIFFERENT PROJECT TITLE LENGTHS*/
+    @media (max-width: 461px) {
+      .footer a.previous {
+        height: 86px;
+      }
+
+    }
+
+
+  </style>
+
 </head>
 
+
+
 <body>
-
-<div id="home-nav-container-uiux">
-	<div id="home-nav"><a href="index.html" target="_self"><img src="./assets/images/home-menu-text.png" height="20px"></a></div>
-</div>
-<div id="profile-nav-container-uiux">
-	<div id="profile-nav"><a href="profile.html" target="_self"><img src="./assets/images/profile-menu-text.png" height="20px"></a></div>
-</div>
-<div id="portfolio-nav-container-uiux">
-	<div id="portfolio-nav"><a href="portfolio.html" target="_self"><img src="./assets/images/portfolio-menu-text.png" height="24px"></a></div>
-</div>
-
-<div id="contact-container">
-	<div id="contact-me">Serena Chang</div>
-	<div id="email">Email: sychang@berkeley.edu</div>
-	<div id="phone">Phone: 417.576.1316</div>
-	<div id="behance-link">Behance: behance.net/biglass</div>
-</div>
-
-<div id="film-header"><img src="./assets/images/film-header.png" width="380px"></div>
-
-<div id="film-desc">As a capstone project for the International Baccalaureate Film class, I had to collaborate with a director, cinematographer, and script writer to produce a seven-minute short film.</div>
-<div id="prod-port"><a href="https://drive.google.com/file/d/0B6CLyuJd_bQSSENTa0E0clFxYnM/view?usp=sharing" target"_blank">View my full Production Portfolio here!</a></div>
+  <div id="page-container">
+    <div id="text-container">
+      <div id="title">FILM AND VIDEO EDITING</div>
+      <div id="subtitle">Broadcast Journalism, Short Films, and Montages</div>
 
 
-<div id="trailer-text">"A Second Chance" Trailer</div>
-<div id="trailer"><iframe src="https://docs.google.com/a/berkeley.edu/file/d/0B6CLyuJd_bQST294dFpzSGRDS3c/preview" width="480" height="360"></iframe></div>
-
-<div id="film-text">"A Second Chance" Full Film</div>
-<div id="film-embed"><iframe src="https://docs.google.com/a/berkeley.edu/file/d/0B6CLyuJd_bQSRmhoRDJleWgtSVU/preview" width="480" height="360"></iframe></div>
-
-<div id="back-to-port"><a href="portfolio.html" target="_self">Back to projects</a></div>
+      <div id="cover-images">
+        <span class="images"><img src="./images/film-cover.png"/></span>
+      </div>
 
 
-<!-- <div id="uiux-header"><img src="./assets/images/uiux-header.png" width="500px"></div>
- -->
-<!-- <div id="glass-link"><a href="https://www.behance.net/gallery/13704767/Re-tasking-Google-Glass-for-Law-Enforcement" target="_blank">Google Glass Applications for Law Enforcement</a></div>
- -->
+      <div class="section-heading">Project Summary</div>
+      <div class="section-text"><strong>Impact and opportunity: </strong>For three years in high school, I was a member of "Central Intelligence (CI)," our school's bi-weekly, student-produced television news program. The shows we created aired to both our school as well as the local community.  For a semester, I was also in CalTV, Berkeley's online television station.</p>
+
+      <p><strong>My role: </strong>For each year of CI, I was a reporter and videographer throughout the year. During my second, year, I was the school's lead Memories Video producer, and I was in charge of planning, filming, and editing an hour-long video for the student body to commemorate our school year. In my third year, I was the line editor for the news program. In addition to producing my own bi-weekly stories, I collected and quality checked the rest of the staff's stories.  I inserted graphics and anchor segments between the stories to put together the whole news show. </p></div>
+
+      <div class="section-heading">"Central Intelligence"</div>
+      <div class="section-text"><p><strong>Creating A Show: </strong>
+        For CI, my partner and I would pitch a story topic at the start of every month, set up interviews around the school and community, film the interviews, then write a voiceover script based on those interview sound bites, film appropriate video clips, or b-roll, to lay over the audio, then edit the pieces together in Final Cut Pro.  Below is an example of one of our news stories, investigating <strong>"Girls On The Run,"</strong> an after-school program that teaches elementary schoolers the importance of physical and mental health.</p>
+
+      <div class="video"><iframe width="420" height="315" src="http://www.schooltube.com/embed/f439175c9fcd4a689c62" frameborder="0" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe></div>
+
+      <p>Another type of story is the feature story/documentary that details our subjects on a more personal level.  This one is about <strong>"Coping With Cancer,"</strong> looks into the lives of two students at our school who lost their parents to cancer.</p>
+
+      <div class="video"><iframe width="420" height="315" src="http://www.schooltube.com/embed/26c944505b768c0c57cf" frameborder="0" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe></div>
+
+      <p>A final feature story details <strong>"The Greatest Generation,"</strong> a group of WWII veterans who are making a difference in the classroom.</p>
+
+      <div class="video"><iframe width="420" height="315" src="http://www.schooltube.com/embed/6edac1d5ec2fae9f4529" frameborder="0" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe></div>
 
 
+      <p><strong>Montage Editing: </strong>At the end of every school year, CI creates an hour-long "Memories Video" to commemorate the year's events. As part of its production, I was in charge of editing a montage documenting our entire student body. My team and I filmed over 4 hours of video footage to capture the <strong>"Faces"</strong> of our student body. After filming, I cut the song mix and edited the clips together in a fast-paced and creative manner - these took over 50 hours of work each, but was probably my favorite part of CI.  Below are the "Faces" montages from two years' Memories Videos.</p>
+
+       <div class="video"><iframe width="420" height="315" src="http://www.schooltube.com/embed/44544bcc91e441899ffd" frameborder="0" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe></div>
+
+        <div class="video"><iframe width="420" height="315" src="https://www.youtube.com/embed/mvj9Rl3AQzs" frameborder="0" allowfullscreen></iframe></div>
+
+      <p><strong>Short Film: </strong>As a capstone project for the International Baccalaureate Film program, I collaborated with a director, cinematographer, and script writer to produce a seven-minute short film as our capstone project.  The <strong>film trailer</strong> for our short film is below.</p>
+
+        <div class="video"><iframe width="420" height="315" src="https://www.youtube.com/embed/B-9v019ZS68" frameborder="0" allowfullscreen></iframe></div>
+
+        <p>The full film, <strong>"A Second Chance,"</strong> is below.  It tells the tale of how mere seconds and one seemingly insignificant event, like spilling a glass of water, can mark the difference between something as dramatic as life and death.  It answers the question that is constantly on our minds: "What if?"</p>
+
+        <div class="video"><iframe width="420" height="315" src="https://www.youtube.com/embed/bAihNZsDIe8" frameborder="0" allowfullscreen></iframe></div>
+
+      </div>
+
+
+
+      <div class="section-heading">Challenges and Things I Learned</div>
+      <div class="section-text">
+          <p><strong>Working with best friends and strangers: </strong>Through this program, I learned to understand strangers quickly, whether I was working with them or interviewing them.  On the flipside, some of my most challenging teamwork experiences came when I was working with close friends.  This program taught me how to be considerate, but assertive of my ideas, in order to produce our best work the most efficiently.</p>
+          <p><strong>Deadlines: </strong>Throughout the school year, we had bi-weekly deadlines, and I learned to appreciate deadlines and work efficiently under pressure.  I learned how to creatively simplify tasks without sacrificing work level. </p>
+          <p><strong>Attention to detail: </strong>I hate putting in half-effort for projects, and I gained a strong attention to detail by constantly editing.  If a pause between interview sound bites was a split second too long or the camera was  tilted during a shoot, it noticeably interrupted the rhythm of the story, so I paid great attention to detail when editing.</p>
+          <p><strong>Asking questions that really matter: </strong>I believe broadcast journalism has a strong connection to design, because in both fields, there is storytelling involved - whether it's to convey a design or report about someone's experience.  I learned that asking the right questions helped understand interviewees better return a much more meaningful narrative. </p>
+
+      </div>
+
+      <div id="back-to-main"><a href="index.html#6" target="_self">Back To Main Page</a></div>
+
+
+
+    </div>
+      <div class="footer">
+        <a class="previous" href="codi.html">
+          Previous Project: 
+          <em>&nbsp;CoDi</em>
+        </a>
+
+        <a class="next" href="ibm.html">
+          Next Project: 
+          <em>&nbsp;IBM Design</em>
+        </a>
+      </div>
+
+  </div>
 </body>
 </html>
+
+
+
+

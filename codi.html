@@ -1,0 +1,434 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Serena // CoDi</title>
+  <meta name="title" content="Serena Chang" />
+  <meta name="description" content="Serena Chang portfolio website" />
+  <link rel="image_src" href="/images/notify_better_image.png" />
+
+  <meta content="http://www.serenachang.me" property="og:url" />
+  <link rel="shortcut icon" id="favicon" href="./images/favicon.png"> 
+  <meta name="author" content="Serena Chang">
+  <link rel="canonical" href="http://www.serenachange.me/index.html" />
+
+  <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,200italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato:100,300,700,100italic' rel='stylesheet' type='text/css'>
+
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script type="text/javascript" src="jquery.onepage-scroll.js"></script>
+
+  <style>
+
+    body {
+      background: #00b2e0;
+      text-align: left;
+      font-family: 'Source Sans Pro';
+      -webkit-font-smoothing: antialiased;
+      padding: none;
+      margin: 0px;
+    }
+
+      a {
+      color: inherit;
+      text-decoration: none;
+      -o-transition:.3s;
+      -ms-transition:.3s;
+      -moz-transition:.3s;
+      -webkit-transition:.3s;
+      transition:.3s;
+      }
+
+      a:link{
+        text-decoration: none;
+
+      }
+
+      a:visited{
+        text-decoration: none;
+      }
+
+      a:hover{
+        text-decoration: none;
+      }
+
+
+
+
+    #page-container {
+      width: 90%;
+      background: #f5fbfc;
+      margin: 0px auto;
+    }
+
+    #text-container {
+      width: 84%;
+      margin: 0px auto;
+      padding-bottom: 24px;
+/*      margin: 40px auto 50px auto;
+*/    }
+
+
+    #title {
+      font-size: 48px;
+      letter-spacing: 5px;
+      color: black;
+      font-weight: 700;
+      width: 125px;
+      margin-right: auto;
+      margin-left: auto;
+      padding-top: 50px;
+      text-align: center;
+    }
+
+
+    #subtitle {
+      width: 788px;
+      color: #00637a;
+      font-size: 24px;
+      font-weight: 700;
+      margin: 0px auto 36px auto;
+      text-align: center;
+    }
+
+    .video {
+      position: relative;
+      padding-top: 315px;
+      margin: 16px auto;
+      width: 420px;
+    }
+
+    .video iframe, .video object, .video embed {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .section-heading {
+      font-weight: 700;
+      font-size: 30px;
+      color: black;
+      margin-top: 24px;
+      margin-bottom: 18px;
+    }
+
+    .section-title {
+      font-weight: 700;
+      font-size: 18px;
+      color: #00637a;
+    }
+
+    .section-text {
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    .section-text strong {
+      color: #00637a;
+    }
+
+    .section-text a:hover {
+      color: #00b2e0;
+    }
+
+    .section-text i {
+      font-size: 16px;
+    }
+
+
+/*    .section-text li {
+      text-indent: -8px;
+    }
+*/
+    .section-text ul li {
+      list-style-position: outside;
+      text-indent: -17px;
+      margin-left: 9px;
+    }
+
+    .section-text li:before {
+      content: "■ ";
+      color: #00637a;
+    }
+
+    #cover-images {
+      margin-bottom: 24px;
+    }
+
+    .process-images img {
+      width: 30.5%;
+      margin: 16px 1% 8px 1%;
+    }
+
+    .images img {
+      width: 100%;
+    }
+
+    #glass-infographic img {
+      width: 100%;
+    }
+
+    .flyer-image {
+      margin-left: auto;
+      margin-right: auto;
+      width: 500px;
+    }
+
+    .flyer-image img {
+      width: 500px;
+    }
+
+
+    #back-to-main {
+      text-align: center;
+      padding-top: 16px;
+      color: #00b2e0;
+      font-weight: 700;
+      font-size: 18px;
+    }
+
+    #back-to-main a:hover {
+      color: #00637a;
+    }
+
+    .footer {
+      background: white;
+    }
+
+    .footer a {
+      box-sizing: border-box;
+      color: #f5fbfc;
+      height: auto;
+      text-align: center;
+      float: left;
+      width: 50%;
+      display: inline-block;
+      padding: 20px;
+      background: #00637a;
+
+    }
+
+    .footer a:hover {
+      background: #007e9b;
+    }
+
+
+    .footer a.previous {
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .footer a.previous em {
+    }
+
+
+    .footer a.next {
+      font-size: 18px;
+      font-weight: 700;
+      border-left: 2px solid #f5fbfc;
+    }
+
+    .footer a.next em {
+    }
+
+/*    @media (max-width: 992px) {
+      #subtitle {
+        width: 550px;
+        text-align: center;
+      }
+
+     }
+*/
+
+    @media (max-width: 960px) {
+
+      #subtitle {
+        width: 515px;
+        text-align: center;
+        font-size: 22px;
+      }
+
+
+/*change if it's not a cover photo, different formatting*/
+/*      .images img {
+        width: 30%;
+      }
+*/    }
+
+    @media (max-width: 600px) {
+      #page-container {
+        width: 100%
+      }
+
+      #title {
+        width: 305px;
+        font-size: 45px;
+      }
+
+      #subtitle {
+        width: 332px;
+        font-size: 20px;
+        text-align: center;
+      }
+
+      .section-text li {
+        text-indent: -20px;
+      }
+
+/*change this if it's not a voer photo*/
+      .process-images img {
+        width: 100%;
+        padding-bottom: 10px;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .video {
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 56px;
+        height: 0;
+        overflow: hidden;
+        width: 100%;
+      }
+
+      .video iframe, .video object, .video embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        max-width: 420px;
+        max-height: 315px;
+        width: 100%;
+        height: 100%;
+      }
+
+    }
+
+/*     @media (max-width: 421px) {
+      .footer a.next {
+        height: 109px;
+      }
+
+    }
+*/
+
+/*FIX THIS FOR DIFFERENT PROJECT TITLE LENGTHS*/
+    @media (max-width: 688px) {
+      .footer a.previous {
+        height: 86px;
+      }
+
+    }
+
+
+  </style>
+
+</head>
+
+
+
+<body>
+  <div id="page-container">
+    <div id="text-container">
+      <div id="title">CODI</div>
+      <div id="subtitle">Diabetes Companion Watch & Health Tracker // Smart Watch App Design</div>
+
+      <div class="video"><iframe width="420" height="315" src="https://www.youtube.com/embed/RQaI3ex5PPM" frameborder="0" allowfullscreen></iframe></div>
+
+
+      <div class="section-heading">Project Summary</div>
+      <div class="section-text"><strong>Impact and opportunity: </strong>40 children are diagnosed with Type 1 Diabetes per day.  Children living with the illness must carefully track their carbohydrate and nutrition intake to determine their insulin dosage - an often arduous and difficult task.  When IEOR 170 professor, Ken Goldberg, gave the prompt, "Design an educational toy for children aged 5-7," my team saw the opportunity to reduce the stigma of Diabetes make living with Diabetes a positive and rewarding learning experience. 
+
+
+      <p><strong>Concept: </strong>CoDi is a companion wrist watch and nutritional tracker that encourages a child with Type I Diabetes to adopt and maintain healthy diet and lifestyle habits alongside a tamagotchi-like character.  Features include: </p>
+
+        <ul style="list-style-type:none" > <!-- either square or default -->
+          <li>&nbsp;Allowing simple food intake input to automatically calibrate insulin pumps.</li>
+          <li>&nbsp;A companion character that reflects the user - if the companion character feels sick, they may suggest activities for the child to complete to maintain normal blood sugar levels.</li>
+          <li>&nbsp;A token store where children can exchange tokens for upgrades to their companion character.</li>
+        </ul>
+
+
+      <p><strong>My role: </strong>I was a member in a group of 9 undergraduates.  Throughout the project, I interviewed users, illustrated multiple mockup iterations, and created the video for the project.</p>
+      </div>
+
+
+
+
+      <div class="section-heading">The Process</div>
+
+      <div id="cover-images">
+        <span class="images"><img src="./images/codi-process-cover1.png"/></span>
+      </div>
+
+      <div class="section-title">Questions we wanted to answer</div></p>
+      <div class="section-text">
+        <ul style="list-style-type:none"> <!-- either square or default -->
+          <li>&nbsp;What is the biggest challenge facing children with diabetes??</li>
+          <li>&nbsp;How can we incorporate technology that is simplistic enough that 5 year olds can use it and not be distracted by it?</li>
+          <li>&nbsp;How can we create something that's unobtrusive to daily life?</li>
+        </ul>
+      </div>
+
+      <div class="section-title">Questions we asked our users (diabetic children and parents)</div>
+      <div class="section-text">
+        <ul style="list-style-type:none">
+          <li>&nbsp;What is the biggest challenge with having Diabetes?</li>
+          <li>&nbsp;What do you usually do when you aren't feeling well at school?</li>
+          <li>&nbsp;What is the biggest difference that Diabetes has made in your life?</li>
+        </ul>
+      </div>
+
+       <div class="section-text"><strong>How we developed our solution: </strong>Initially the project prompt was to create an educational children's toy.  Our team wanted to take the definition of "education" outside the classroom and wanted to tackle general health education.  We saw a need with Diabetes, because no product in the current market can accompany a young student into the classroom and encourage a healthier lifestyle.
+
+
+      <p>From our research, we developed personas of Diabeted children as well as parents and teachers who monitor the children.  We began brainstorming solutions for our personas, which ranged anywhere from insulin pens to Club Penguin-like communities.  After combining and narrowing down the ideas, we decided to create a Tamagotchi-like experience on a smart watch interface that could accompany a student anywhere without being obstrusive.  A major pain point for children is their need to rigorously document their food intake.  We sought to gamify and simplify the experience for them and give parents peace of mind that their health is being monitored.  We sketched <strong>low-fidelity interfaces</strong> and interactions for our watch, a sample shown below.</p>
+
+      <div id="cover-images">
+        <span class="images"><img src="./images/codi-process-cover.png"/></span>
+      </div>
+
+      <p>After fleshing out the content and functionality with these sketches, we were able to mock them up digitally to test how they would appear on a watch screen.  Some of the <strong>Illustrator mockups</strong> are shown below.</p>
+
+      <div class="process-images">
+        <img src="./images/codi-image1.png">
+        <img src="./images/codi-image2.png">
+        <img src="./images/codi-image3.png">
+      </div>
+
+
+      <p>With these product features, Diabetic children don't have to feel like they are fighting the disease alone, and can be incentivized and empower to maintain healthy lifestyle habits.  For more information on the watch features, visit the <strong><a href="http://changsta2.wix.com/ieor170" target="_blank">project website</a></strong> I created.  </p>
+
+      </div>
+
+      <div class="section-heading">What I Learned</div>
+      <div class="section-text">
+          <p><strong>Tiny interfaces: </strong>Watches give very little screen real estate - we slimmed down on information and redesigned the flow many times before the interactions became intuitive.</p>
+          <p><strong>Purpose: </strong>It's more challenging, but also more impactful to design an educational that teaches a lifestyle, not simply a skill.</p>
+      </div>
+
+      <div id="back-to-main"><a href="index.html#6" target="_self">Back To Main Page</a></div>
+
+
+
+    </div>
+      <div class="footer">
+        <a class="previous" href="flare.html">
+          Previous Project: 
+          <em>&nbsp;Flare</em>
+        </a>
+
+        <a class="next" href="film.html">
+          Next Project: 
+          <em>&nbsp;Film and Video Editing</em>
+        </a>
+      </div>
+
+  </div>
+</body>
+</html>
+
+
+
+

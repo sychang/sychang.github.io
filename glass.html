@@ -1,0 +1,389 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Serena // Google Glass</title>
+  <meta name="title" content="Serena Chang" />
+  <meta name="description" content="Serena Chang portfolio website" />
+  <link rel="image_src" href="/images/notify_better_image.png" />
+
+  <meta content="http://www.serenachang.me" property="og:url" />
+  <link rel="shortcut icon" id="favicon" href="./images/favicon.png"> 
+  <meta name="author" content="Serena Chang">
+  <link rel="canonical" href="http://www.serenachange.me/index.html" />
+
+  <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,200italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato:100,300,700,100italic' rel='stylesheet' type='text/css'>
+
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script type="text/javascript" src="jquery.onepage-scroll.js"></script>
+
+  <style>
+
+    body {
+      background: #b9223d;
+      text-align: left;
+      font-family: 'Source Sans Pro';
+      -webkit-font-smoothing: antialiased;
+      padding: none;
+      margin: 0px;
+    }
+
+      a {
+      color: inherit;
+      text-decoration: none;
+      -o-transition:.3s;
+      -ms-transition:.3s;
+      -moz-transition:.3s;
+      -webkit-transition:.3s;
+      transition:.3s;
+      }
+
+      a:link{
+        text-decoration: none;
+
+      }
+
+      a:visited{
+        text-decoration: none;
+      }
+
+      a:hover{
+        text-decoration: none;
+      }
+
+
+
+
+    #page-container {
+      width: 90%;
+      background: #fcf5f7;
+      margin: 0px auto;
+    }
+
+    #text-container {
+      width: 84%;
+      margin: 0px auto;
+      padding-bottom: 24px;
+/*      margin: 40px auto 50px auto;
+*/    }
+
+
+    #title {
+      font-size: 48px;
+      letter-spacing: 5px;
+      color: black;
+      font-weight: 700;
+      width: 468px;
+      margin-right: auto;
+      margin-left: auto;
+      padding-top: 50px;
+    }
+
+
+
+    #subtitle {
+      width: 788px;
+      color: #700014;
+      font-size: 24px;
+      font-weight: 700;
+      margin: 0px auto 36px auto;
+    }
+
+    .section-heading {
+      font-weight: 700;
+      font-size: 30px;
+      color: black;
+      margin-top: 24px;
+      margin-bottom: 18px;
+    }
+
+    .section-title {
+      font-weight: 700;
+      font-size: 18px;
+      color: #700014;
+    }
+
+    .section-text {
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    .section-text strong {
+      color: #700014;
+    }
+
+    .section-text i {
+      font-size: 18px;
+      color: #b9223d;
+    }
+
+    .section-text ul li {
+      list-style-position: outside;
+      text-indent: -17px;
+      margin-left: 9px;
+    }
+
+    .section-text li:before {
+      content: "■ ";
+      color: #700014;
+    }
+
+    #cover-images {
+      margin-bottom: 24px;
+    }
+
+    .process-images img {
+      width: 30.5%;
+      margin: 8px 1% 8px 1%;
+    }
+
+    .images img {
+      width: 100%;
+    }
+
+    #glass-infographic img {
+      width: 100%;
+    }
+
+
+    #back-to-main {
+      text-align: center;
+      padding-top: 16px;
+      color: #b9223d;
+      font-weight: 700;
+      font-size: 18px;
+    }
+
+    #back-to-main a:hover {
+      color: #700014;
+    }
+
+    .footer {
+      background: white;
+    }
+
+    .footer a {
+      box-sizing: border-box;
+      color: #fcf5f7;
+      height: auto;
+      text-align: center;
+      float: left;
+      width: 50%;
+      display: inline-block;
+      padding: 20px;
+      background: #700014;
+
+    }
+
+    .footer a:hover {
+      background: #8e1322;
+    }
+
+
+    .footer a.previous {
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .footer a.previous em {
+    }
+
+
+    .footer a.next {
+      font-size: 18px;
+      font-weight: 700;
+      border-left: 2px solid #fcf5f7;
+    }
+
+    .footer a.next em {
+    }
+
+    @media (max-width: 956px) {
+      #subtitle {
+        width: 500px;
+        text-align: center;
+      }
+
+     }
+
+
+    @media (max-width: 780px) {
+      #title {
+        font-size: 36px;
+        width: 512px;
+        text-align: center;
+      }
+
+      #subtitle {
+        font-size: 20px;
+        width: 478px;
+        text-align: center;
+      }
+
+      .footer a.next {
+        height: 86px;
+      }
+
+/*change if it's not a cover photo, different formatting*/
+/*      .images img {
+        width: 30%;
+      }
+*/    }
+
+    @media (max-width: 600px) {
+      #page-container {
+        width: 100%
+      }
+
+      #title {
+        width: 305px;
+        font-size: 45px;
+      }
+
+      #subtitle {
+        width: 332px;
+        text-align: center;
+      }
+
+      .section-text li {
+        text-indent: -20px;
+      }
+
+/*change this if it's not a voer photo*/
+      .process-images img {
+        width: 100%;
+        padding-bottom: 10px;
+      }
+    }
+
+     @media (max-width: 421px) {
+      .footer a.next {
+        height: 109px;
+      }
+
+    }
+
+
+/*FIX THIS FOR DIFFERENT PROJECT TITLE LENGTHS*/
+/*    @media (max-width: 535px) {
+      .footer a.previous {
+        height: 86px;
+      }
+
+    }
+*/
+
+  </style>
+
+</head>
+
+
+
+<body>
+  <div id="page-container">
+    <div id="text-container">
+      <div id="title">GLASS ON PATROL</div>
+      <div id="subtitle">Retasking Google Glass For Law Enforcement // UX Research and UI Design</div>
+
+      <div id="cover-images">
+        <span class="images"><img src="./images/glass-cover.png"/></span>
+      </div>
+
+
+      <div class="section-heading">Project Summary</div>
+      <div class="section-text"><strong>Impact and opportunity: </strong>How can Google Glass benefit professionals in industry? Accenture Technology labs tasked our Berkeley Innovation team of seven to research and design the interface for a new enterprise application for Google Glass. At the time of this project in Fall 2013, there were not comprehensive applications of Glass in many industries.  With our project, we sought to uncover applications for a new industry. 
+
+      <p><strong>My role: </strong>I worked collaboratively in our user research, interviewing UCPD and Alameda County police captains and going on patrol ride-alongs to record officer interaction with technology.  During a later phase, I brainstormed and designed the user-interaction for a patrol officer in a routine traffic pull-over scenario.</p>
+      </div>
+
+
+      <div class="section-heading">The Process</div>
+
+      <div class="section-title">Questions we wanted to answer</div>
+      <div class="section-text">
+        <ul style="list-style-type:none"> <!-- either square or default -->
+          <li>&nbsp;What industry has the most tech that needs to be consolidated?</li>
+          <li>&nbsp;How can Glass consolidate all the technologies police offers use?</li>
+          <li>&nbsp;How can we design an experience that will not distract an officer during routine or emergency protocol?</li>
+        </ul>
+      </div>
+
+      <div class="section-title">Questions we asked patrol officers</div>
+      <div class="section-text">
+        <ul style="list-style-type:none">
+          <li>&nbsp;When do you face the most uncertainty on the job?</li>
+          <li>&nbsp;What is the biggest difficulty about being a police officer?</li>
+          <li>&nbsp;What is the greatest challenge you face with your technology on the job?</li>
+        </ul>
+      </div>
+
+      <div class="section-text"><strong>How we developed our solution: </strong>To scope the project, our team had to first find an industry that had a need for Glass.  We assessed Glass' strengths and weaknesses and brainstormed applications in different industries.
+
+        <div class="process-images">
+          <img src="./images/glass-strengths.png">
+          <img src="./images/glass-weaknesses.png">
+          <img src="./images/glass-industry.png">
+        </div>
+
+      <p>We decided on law enforcement, because police officers often have to respond to emergency situations where mere seconds can make a big difference.  We saw Glass' potential to record and transmit information quickly and on the go.  Police officers also have multiple pieces of technology--phone, radio, computer, camera--that they are often using simultaneously.</p>
+
+      <p><i>"We are constantly being bombarded with information and updates on numerous different platforms."</i></p>
+      
+      <p>We interviewed police officers, rode along in patrol shifts, and observed the dispatch room to better understand a police officer's everyday and observe their pain points when they <strong>interact with technology.</strong>  Our main personas became dispatchers, who process incoming calls and delegates assignments, and patrol officers, who responds to calls and records crime and accident scenes.  </p> 
+
+        <div class="process-images">
+          <img src="./images/glass-tech1.png">
+          <img src="./images/glass-tech2.png">
+          <img src="./images/glass-tech3.png">
+        </div>
+
+      <p>From our interviews, we deduced that the traffic stop is one of the most dangerous routine protocols for a patrol officer because they have no idea who is behind the wheel.  When they leave their patrol vehicle, they are also leaving most of their technology behind.  We saw a need for increased safety and efficiency in this situation as well as a need for more consolidated technology.  After identifying these needs, we were able to create goals that we wanted our sample use case to accomplish.</p>
+
+      <p><strong>Design Goals</strong></p>
+      <ul style="list-style-type:none">
+          <li>&nbsp;Improve officer safety (and reduce stress) by centralizing the information onto one Glass interface.</li>
+          <li>&nbsp;Give patrol officers subtle means other than voice to interact with one another.</li>
+        </ul>
+
+      <p>We then mocked up the use case of a police officer pulling a driver over for speeding, showing how the driver can be quickly identified beforehand, and the police officer can send immediate pictures and documentation back to dispatch should an incident occur. <strong>Glass interface mockups</strong> for the use case are shown below.</p>
+
+        <div class="process-images">
+          <img src="./images/glass-ui1.jpg">
+          <img src="./images/glass-ui2.jpg">
+          <img src="./images/glass-ui3.jpg">
+        </div>
+
+      </div>
+
+      <div class="section-heading">Challenges and Things I Learned</div>
+      <div class="section-text">
+          <p><strong>Project scoping: </strong>Finding an industry was the most difficult part of the project because it was so open-ended.  Identifying strengths and weaknesses and comparing technology usage within industries was helpful in narrowing the search down.  Once we had a clear direction, the rest was much easier.</p>
+          <p><strong>First experience in design:</strong> This was my first design project in college, it taught me to leverage the strengths of our different team member backgrounds and gave me the first exposure to the design process.</p>
+      </div>
+
+      <div id="back-to-main"><a href="index.html#6" target="_self">Back To Main Page</a></div>
+
+
+
+    </div>
+      <div class="footer">
+        <a class="previous" href="dc.html">
+          Previous Project: 
+          <em>&nbsp;Berkeley Design Council</em>
+        </a>
+
+        <a class="next" href="waittime.html">
+          Next Project: 
+          <em>&nbsp;WaitTime</em>
+        </a>
+      </div>
+
+  </div>
+</body>
+</html>
+
+
+
+

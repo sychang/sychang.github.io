@@ -1,0 +1,432 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Serena // WaitTime</title>
+  <meta name="title" content="Serena Chang" />
+  <meta name="description" content="Serena Chang portfolio website" />
+  <link rel="image_src" href="/images/notify_better_image.png" />
+
+  <meta content="http://www.serenachang.me" property="og:url" />
+  <link rel="shortcut icon" id="favicon" href="./images/favicon.png"> 
+  <meta name="author" content="Serena Chang">
+  <link rel="canonical" href="http://www.serenachange.me/index.html" />
+
+  <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,200italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato:100,300,700,100italic' rel='stylesheet' type='text/css'>
+
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script type="text/javascript" src="jquery.onepage-scroll.js"></script>
+
+  <style>
+
+    body {
+      background: #f05a28;
+      text-align: left;
+      font-family: 'Source Sans Pro';
+      -webkit-font-smoothing: antialiased;
+      padding: none;
+      margin: 0px;
+    }
+
+      a {
+      color: inherit;
+      text-decoration: none;
+      -o-transition:.3s;
+      -ms-transition:.3s;
+      -moz-transition:.3s;
+      -webkit-transition:.3s;
+      transition:.3s;
+      }
+
+      a:link{
+        text-decoration: none;
+
+      }
+
+      a:visited{
+        text-decoration: none;
+      }
+
+      a:hover{
+        text-decoration: none;
+      }
+
+
+
+
+    #page-container {
+      width: 90%;
+      background: #fcf6f5;
+      margin: 0px auto;
+    }
+
+    #text-container {
+      width: 84%;
+      margin: 0px auto;
+      padding-bottom: 24px;
+/*      margin: 40px auto 50px auto;
+*/    }
+
+
+    #title {
+      font-size: 48px;
+      letter-spacing: 5px;
+      color: black;
+      font-weight: 700;
+      width: 250px;
+      margin-right: auto;
+      margin-left: auto;
+      padding-top: 50px;
+    }
+
+
+
+    #subtitle {
+      width: 818px;
+      color: #9f2900;
+      font-size: 24px;
+      font-weight: 700;
+      margin: 0px auto 36px auto;
+      text-align: center;
+    }
+
+    .video {
+      position: relative;
+      padding-top: 315px;
+      margin: 16px auto;
+      width: 560px;
+    }
+
+    .video iframe, .video object, .video embed {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+
+    .section-heading {
+      font-weight: 700;
+      font-size: 30px;
+      color: black;
+      margin-top: 24px;
+      margin-bottom: 18px;
+    }
+
+    .section-title {
+      font-weight: 700;
+      font-size: 18px;
+      color: #9f2900;
+    }
+
+    .section-text {
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    .section-text strong {
+      color: #9f2900;
+    }
+
+    .section-text i {
+      font-size: 16px;
+    }
+
+    .section-text ul li {
+      list-style-position: outside;
+      text-indent: -17px;
+      margin-left: 9px;
+    }
+
+    .section-text li:before {
+      content: "■ ";
+      color: #9f2900;
+    }
+
+    #cover-images {
+      margin-bottom: 24px;
+    }
+
+    .process-images img {
+      width: 30%;
+      margin: 8px 1% 8px 1%;
+    }
+
+    .images img {
+      width: 100%;
+    }
+
+    #glass-infographic img {
+      width: 100%;
+    }
+
+
+    #back-to-main {
+      text-align: center;
+      padding-top: 16px;
+      color: #f05a28;
+      font-weight: 700;
+      font-size: 18px;
+    }
+
+    #back-to-main a:hover {
+      color: #9f2900;
+    }
+
+    .footer {
+      background: white;
+    }
+
+    .footer a {
+      box-sizing: border-box;
+      color: #fcf6f5;
+      height: auto;
+      text-align: center;
+      float: left;
+      width: 50%;
+      display: inline-block;
+      padding: 20px;
+      background: #9f2900;
+
+    }
+
+    .footer a:hover {
+      background: #c83c0b;
+    }
+
+
+    .footer a.previous {
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .footer a.previous em {
+    }
+
+
+    .footer a.next {
+      font-size: 18px;
+      font-weight: 700;
+      border-left: 2px solid #fcf6f5;
+    }
+
+    .footer a.next em {
+    }
+
+    @media (max-width: 992px) {
+      #subtitle {
+        width: 550px;
+        text-align: center;
+      }
+
+     }
+
+
+    @media (max-width: 780px) {
+      #title {
+        font-size: 36px;
+        width: 512px;
+        text-align: center;
+      }
+
+      #subtitle {
+        font-size: 20px;
+        width: 478px;
+        text-align: center;
+      }
+
+/*change if it's not a cover photo, different formatting*/
+/*      .images img {
+        width: 30%;
+      }
+*/    }
+
+    @media (max-width: 745px) {
+      .video {
+        position: relative;
+        padding-bottom: 45%;
+        padding-top: 56px;
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+      }
+
+      .video iframe, .video object, .video embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        max-width: 560px;
+        max-height: 315px;
+        width: 100%;
+        height: 100%;
+      }
+
+    }
+
+    @media (max-width: 600px) {
+      #page-container {
+        width: 100%
+      }
+
+      #title {
+        width: 305px;
+        font-size: 45px;
+      }
+
+      #subtitle {
+        width: 332px;
+        text-align: center;
+      }
+
+      .section-text li {
+        text-indent: -20px;
+      }
+
+/*change this if it's not a voer photo*/
+      .process-images img {
+        width: 100%;
+        padding-bottom: 10px;
+      }
+    }
+
+/*     @media (max-width: 421px) {
+      .footer a.next {
+        height: 109px;
+      }
+
+    }
+*/
+
+/*FIX THIS FOR DIFFERENT PROJECT TITLE LENGTHS*/
+    @media (max-width: 582px) {
+      .footer a.next {
+        height: 86px;
+      }
+
+    }
+
+/*    @media (max-width: 500px) {
+      .video {
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 56px;
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+      }
+
+      .video iframe, .video object, .video embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        max-width: 420px;
+        max-height: 315px;
+        width: 100%;
+        height: 100%;
+      }
+
+    }
+*/
+
+  </style>
+
+</head>
+
+
+
+<body>
+  <div id="page-container">
+    <div id="text-container">
+      <div id="title">WAITTIME</div>
+      <div id="subtitle">Product Ideation and Prototyping for IoT in Retail // Undergraduate Research</div>
+
+       <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/4J74rkGcfRY" frameborder="0" allowfullscreen></iframe></div>
+
+<!--       <div id="cover-images">
+        <span class="images"><img src="./images/ibm-cover3.png"/></span>
+      </div>
+ -->
+
+      <div class="section-heading">Project Summary</div>
+      <div class="section-text"><strong>Impact and opportunity: </strong>During busy hours, restaurants employees fight a minute-by-minute barrage of information and tasks that it's hard to remember everything and keep everyone happy. In Professor Alice Agogino's IoT design lab, we partnered with Samsung's IoT innovation lab to improve the end-to-end restaurant experience with an NFC chip-integrated smart watch application for waiters.
+
+      <p><strong>My role: </strong>My research team consisted of five undergraduates.  At the start of the project, I researched existing technologies within retail industries, specifically in grocery stores and restaurants. I collaborated in prototyping and user testing IoT, then filmed and edited our concept video.</p>
+      </div>
+
+
+      <div class="section-heading">The Process</div>
+
+
+      <div class="section-title">Questions we wanted to answer</div>
+      <div class="section-text">
+        <ul style="list-style-type:none"> <!-- either square or default -->
+          <li>&nbsp;What are the biggest frustrations of retail customers?</li>
+          <li>&nbsp;How can IoT technology add value to the retail experience?</li>
+          <li>&nbsp;Which retail industry has the greatest area for improvement here?</li>
+        </ul>
+      </div>
+
+      <div class="section-title">Questions we asked our users (restaurant employees and customers)</div>
+      <div class="section-text">
+        <ul style="list-style-type:none">
+          <li>&nbsp;What part of your job is the most difficult?</li>
+          <li>&nbsp;What is usually a customer's biggest complaint?</li>
+          <li>&nbsp;What causes the most friction in your interactions with customers?</li>
+        </ul>
+      </div>
+
+      <div class="section-text"><strong>How we developed our solution: </strong>Professor Agogino's research lab places strong emphasis on human-centered design research processes, so my team began the project by scoping out the retail industry, our focus for the project.  After exploring grocery stores, department stores, online shopping, and beyond, we decided to focus our efforts on introducing IoT in restaurants.  We saw the greatest opportunity because restaurant employees have to complete multiple tasks simultaneously and existing technology is involved, but scattered.
+
+      <p>By interviewing resturant employees and customers, we created a customer and waiter <strong>journey map</strong> to determine the points during a restaurant visit at which they would interact with each other or with technology. </p> 
+
+      <div id="cover-images">
+        <span class="images"><img src="./images/waittime-journey.png"/></span>
+      </div>
+
+      <p>With an understanding of our users' pain points, we brainstormed, sketched, and clustered over 50 concepts.  Samples of our <strong>ideation </strong>are shown below.  They center around customers' experiences and include wait time, waiter relationship, and payment. </p>      
+
+      <div class="process-images">
+        <img src="./images/waittime-process2.png">
+        <img src="./images/waittime-process3.png">
+        <img src="./images/waittime-process1.png">
+      </div>
+
+      <p>We decided to focus on waiting time, because the biggest frustration of the restaurant goers we interviewed was their time spent waiting to be seated, waiting for food, waiting for the check, etc.  We set out with the goal of using IoT to reduce wait time for customers and alert employees when a table needs attention.</p>
+
+      <p>Because our project focused on IoT technologies, we decided to use a smart watch as the medium instead of, say, a smart phone because it was less likely to disrupt a waiter's routine.  We prototyped a solution where each table could notify waiters when customers needed service to eliminate the lag time between need and response.  We tested this concept in a restaurant by manually triggering watch notifications for the waiter and assessing how it influenced their workflow.  Waiters responded positively to being alerted, but admitted ignoring the notification if they were in the middle of another task, giving us good critical feedback to move forward with.</p>
+
+
+      </div>
+
+      <div class="section-heading">Things I Learned</div>
+      <div class="section-text">
+          <p><strong>Users before tech: </strong>Even though the IoT technology was a main part of the prompt, our mentor made sure we considered our persona's experiences before the technology we were assigned in order to properly address our users' pain points and needs.</p>
+          <p><strong>GG:</strong> Battery life sucks, it sucks in general, etc.</p>
+          <p><strong>Design is cool!:</strong> This was my first design project in college, it taught me worlds about the design process.</p>
+      </div>
+
+      <div id="back-to-main"><a href="index.html#6" target="_self">Back To Main Page</a></div>
+
+
+
+    </div>
+      <div class="footer">
+        <a class="previous" href="glass.html">
+          Previous Project: 
+          <em>&nbsp;Glass On Patrol</em>
+        </a>
+
+        <a class="next" href="kin.html">
+          Next Project: 
+          <em>&nbsp;KIN</em>
+        </a>
+      </div>
+
+  </div>
+</body>
+</html>
+
+
+
+

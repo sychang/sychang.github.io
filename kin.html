@@ -1,0 +1,373 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Serena // KIN</title>
+  <meta name="title" content="Serena Chang" />
+  <meta name="description" content="Serena Chang portfolio website" />
+  <link rel="image_src" href="/images/notify_better_image.png" />
+
+  <meta content="http://www.serenachang.me" property="og:url" />
+  <link rel="shortcut icon" id="favicon" href="./images/favicon.png"> 
+  <meta name="author" content="Serena Chang">
+  <link rel="canonical" href="http://www.serenachange.me/index.html" />
+
+  <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,200italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato:100,300,700,100italic' rel='stylesheet' type='text/css'>
+
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script type="text/javascript" src="jquery.onepage-scroll.js"></script>
+
+  <style>
+
+    body {
+      background: #f6c513;
+      text-align: left;
+      font-family: 'Source Sans Pro';
+      -webkit-font-smoothing: antialiased;
+      padding: none;
+      margin: 0px;
+    }
+
+      a {
+      color: inherit;
+      text-decoration: none;
+      -o-transition:.3s;
+      -ms-transition:.3s;
+      -moz-transition:.3s;
+      -webkit-transition:.3s;
+      transition:.3s;
+      }
+
+      a:link{
+        text-decoration: none;
+
+      }
+
+      a:visited{
+        text-decoration: none;
+      }
+
+      a:hover{
+        text-decoration: none;
+      }
+
+
+
+
+    #page-container {
+      width: 90%;
+      background: #fcfbf7;
+      margin: 0px auto;
+    }
+
+    #text-container {
+      width: 84%;
+      margin: 0px auto;
+      padding-bottom: 24px;
+/*      margin: 40px auto 50px auto;
+*/    }
+
+
+/*    #title {
+      font-size: 48px;
+      letter-spacing: 5px;
+      color: black;
+      font-weight: 700;
+      width: 85px;
+      margin-right: auto;
+      margin-left: auto;
+      padding-top: 50px;
+      text-align: center;;
+    }
+*/
+
+	#title-img {
+		margin-left: auto;
+		margin-right: auto;
+		width: 250px;
+		padding-top: 24px;
+	}
+
+	#title-img img {
+		width: 250px;
+	}
+
+    #subtitle {
+      width: 620px;
+      color: #f36f21;
+      font-size: 24px;
+      font-weight: 700;
+      margin: 0px auto 36px auto;
+      text-align: center;
+    }
+
+    .section-heading {
+      font-weight: 700;
+      font-size: 30px;
+      color: black;
+      margin-top: 24px;
+      margin-bottom: 18px;
+    }
+
+    .section-title {
+      font-weight: 700;
+      font-size: 18px;
+      color: #f36f21;
+    }
+
+    .section-text {
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    .section-text strong {
+      color: #f36f21;
+    }
+
+    .section-text i {
+      font-size: 16px;
+    }
+
+    .section-text ul li {
+      list-style-position: outside;
+      text-indent: -17px;
+      margin-left: 9px;
+    }
+
+    .section-text li:before {
+      content: "■ ";
+      color: #f36f21;
+    }
+
+    #cover-images {
+      margin-bottom: 24px;
+    }
+
+    .process-images img {
+      width: 30%;
+      margin: 0px 1% 8px 1%;
+    }
+
+    .images img {
+      width: 100%;
+    }
+
+    #glass-infographic img {
+      width: 100%;
+    }
+
+
+    #back-to-main {
+      text-align: center;
+      padding-top: 16px;
+      color: #f6c513;
+      font-weight: 700;
+      font-size: 18px;
+    }
+
+    #back-to-main a:hover {
+      color: #f36f21;
+    }
+
+    .footer {
+      background: white;
+    }
+
+    .footer a {
+      box-sizing: border-box;
+      color: #fcfbf7;
+      height: auto;
+      text-align: center;
+      float: left;
+      width: 50%;
+      display: inline-block;
+      padding: 20px;
+      background: #f36f21;
+
+    }
+
+    .footer a:hover {
+      background: #f48b56;
+    }
+
+
+    .footer a.previous {
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .footer a.previous em {
+    }
+
+
+    .footer a.next {
+      font-size: 18px;
+      font-weight: 700;
+      border-left: 2px solid #fcfbf7;
+    }
+
+    .footer a.next em {
+    }
+
+/*    @media (max-width: 992px) {
+      #subtitle {
+        width: 550px;
+        text-align: center;
+      }
+
+     }
+*/
+
+    @media (max-width: 780px) {
+      #title {
+        font-size: 36px;
+        width: 512px;
+        text-align: center;
+      }
+
+      #subtitle {
+        font-size: 20px;
+        width: 510px;
+        text-align: center;
+      }
+
+
+/*change if it's not a cover photo, different formatting*/
+/*      .images img {
+        width: 30%;
+      }
+*/    }
+
+    @media (max-width: 600px) {
+      #page-container {
+        width: 100%
+      }
+
+      #title {
+        width: 305px;
+        font-size: 45px;
+      }
+
+      #subtitle {
+        width: 332px;
+        text-align: center;
+      }
+
+      .section-text li {
+        text-indent: -20px;
+      }
+
+/*change this if it's not a voer photo*/
+      .process-images img {
+        width: 100%;
+        padding-bottom: 10px;
+      }
+    }
+
+/*     @media (max-width: 421px) {
+      .footer a.next {
+        height: 109px;
+      }
+
+    }
+*/
+
+/*FIX THIS FOR DIFFERENT PROJECT TITLE LENGTHS*/
+    @media (max-width: 501px) {
+      .footer a.next {
+        height: 86px;
+      }
+
+    }
+
+
+  </style>
+
+</head>
+
+
+
+<body>
+  <div id="page-container">
+    <div id="text-container">
+    	<div id="title-img"><img src="./images/kin-logo.png"></div>
+      <div id="subtitle">Solar Lantern For The Rural Phillippines // Product Design</div>
+
+      <div id="cover-images">
+        <span class="images"><img src="./images/kin-cover2.png"/></span>
+      </div>
+
+
+      <div class="section-heading">Project Summary</div>
+      <div class="section-text"><strong>Impact and opportunity: </strong>Currently, many impoverished rural Filipino families burn expensive and harmful kerosene to supply light from dusk to dawn. Our challenge? Design an affordable, sustainable, and user friendly communal light fixture using alternative energy sources.  My team designed KIN, a multpurpose, communal, and portable solar-powered light fixture to reduce expenses and harm in the Phillippines.
+
+      <p><strong>My role: </strong>With my team from Berkeley Innovation, I conducted user research and obtained information regarding rural Filipino lifestyle. I contributed to our design and feature ideas early on during brainstorming and built the prototype of our eventual design.</p>
+      </div>
+
+
+      <div class="section-heading">The Process</div>
+
+      <div class="section-title">Questions we wanted to answer</div>
+      <div class="section-text">
+        <ul style="list-style-type:none"> <!-- either square or default -->
+          <li>&nbsp;How can we minimize the cost of lighting an entire household?</li>
+          <li>&nbsp;What do families typically do at night?  How can our light enhance their nightly routine?</li>
+          <li>&nbsp;How do we create a versatile light fixture that can be used for different situations during different times of day?</li>
+        </ul>
+      </div>
+
+      <div class="section-text"><strong>How we developed our solution: </strong>None of our team members had firsthand experience with the problem at hand, so we interviewed professors and Filipino studies instructors in addition to remotely communicated with members of the rural Filipino community.  Through this, we gained an understanding of their housing, transportation, family construction, work, education, and social interactions.
+
+        <p>The community we researched live a communal lifestyle, where many spaces and activities in the household are shared.  After dusk, children need light to study in their rooms and mothers need light to create crafts to sell in markets the next day.  Families also need to be able to charge their cellphones easily.</p>
+
+        <p>With these insights, we began ideating a device for families to charge in the sun during the day then use at night.  We aimed for a light fixture that was sustainable, communal, and versatile.  We began brainstorming as many out-of-the-box ideas as we could, from stretchable to modular to rollable designs.  Below are some images from our <strong>early ideation and prototyping.</strong></p>
+  
+        <div class="process-images">
+          <img src="./images/solar-process2.png">
+          <img src="./images/solar-process3.png">
+          <img src="./images/solar-process4.png">
+        </div>
+
+
+        <p>From there, we combined the best features of multiple designs into one collaborative design.  We created a mid-fidelity prototype with household materials and a functioning solar light.  The end solution can serve as a personal desk lamp for studying, link with other light units to create a brighter communal wall light, or expand to hang from the ceiling.  The images below demostrate a few <strong>use cases for the solar light.</strong></p>
+
+        <div class="process-images">
+          <img src="./images/solar-image1.jpg">
+          <img src="./images/solar-image2.jpg">
+          <img src="./images/solar-image3.jpg">
+        </div>
+
+      </div>
+
+      <div class="section-heading">Challenges and Things I Learned</div>
+      <div class="section-text">
+          <p><strong>Understanding users: </strong>Because we couldn't make a trip to the Phillippines, building personas and their needs was a challenge, however some creative secondary research gave us most of the answers we needed to scope the project.</p>
+          <p><strong>Divergent thinking: </strong>Our most creative ideas were born from brainstorming "impossible" ideas first, then gradually reeling them in to something "almost impossible."</p>
+      </div>
+
+      <div id="back-to-main"><a href="index.html#6" target="_self">Back To Main Page</a></div>
+
+
+
+    </div>
+      <div class="footer">
+        <a class="previous" href="waittime.html">
+          Previous Project: 
+          <em>&nbsp;WaitTime</em>
+        </a>
+
+        <a class="next" href="flare.html">
+          Next Project: 
+          <em>&nbsp;Flare</em>
+        </a>
+      </div>
+
+  </div>
+</body>
+</html>
+
+
+
+

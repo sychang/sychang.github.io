@@ -1,0 +1,394 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Serena // Berkeley Design Council</title>
+  <meta name="title" content="Serena Chang" />
+  <meta name="description" content="Serena Chang portfolio website" />
+  <link rel="image_src" href="/images/notify_better_image.png" />
+
+  <meta content="http://www.serenachang.me" property="og:url" />
+  <link rel="shortcut icon" id="favicon" href="./images/favicon.png"> 
+  <meta name="author" content="Serena Chang">
+  <link rel="canonical" href="http://www.serenachange.me/index.html" />
+
+  <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,200italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato:100,300,700,100italic' rel='stylesheet' type='text/css'>
+
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script type="text/javascript" src="jquery.onepage-scroll.js"></script>
+
+  <style>
+
+    body {
+      background: #8dc63e;
+      text-align: left;
+      font-family: 'Source Sans Pro';
+      -webkit-font-smoothing: antialiased;
+      padding: none;
+      margin: 0px;
+    }
+
+      a {
+      color: inherit;
+      text-decoration: none;
+      -o-transition:.3s;
+      -ms-transition:.3s;
+      -moz-transition:.3s;
+      -webkit-transition:.3s;
+      transition:.3s;
+      }
+
+      a:link{
+        text-decoration: none;
+
+      }
+
+      a:visited{
+        text-decoration: none;
+      }
+
+      a:hover{
+        text-decoration: none;
+      }
+
+
+
+
+    #page-container {
+      width: 90%;
+      background: #f2f9e5;
+      margin: 0px auto;
+    }
+
+    #text-container {
+      width: 84%;
+      margin: 0px auto;
+      padding-bottom: 24px;
+/*      margin: 40px auto 50px auto;
+*/    }
+
+
+    #title {
+      font-size: 48px;
+      letter-spacing: 5px;
+      color: black;
+      font-weight: 700;
+      width: 706px;
+      margin-right: auto;
+      margin-left: auto;
+      padding-top: 50px;
+      text-align: center;
+    }
+
+
+
+    #subtitle {
+      width: 540px;
+      color: #53880a;
+      font-size: 24px;
+      font-weight: 700;
+      margin: 0px auto 36px auto;
+    }
+
+    .section-heading {
+      font-weight: 700;
+      font-size: 30px;
+      color: black;
+      margin-top: 24px;
+      margin-bottom: 18px;
+    }
+
+    .section-title {
+      font-weight: 700;
+      font-size: 18px;
+      color: #53880a;
+    }
+
+    .section-text {
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    .section-text strong {
+      color: #53880a;
+    }
+
+    .section-text i {
+      font-size: 18px;
+    }
+
+    .section-text ul li {
+      list-style-position: outside;
+      text-indent: -17px;
+      margin-left: 9px;
+    }
+
+    .section-text li:before {
+      content: "■ ";
+      color: #53880a;
+    }
+
+    #cover-images {
+      margin-bottom: 24px;
+    }
+
+    .process-images img {
+      width: 100%;
+      margin: 16px 0px 30px 0px;
+      -o-transition:.3s;
+      -ms-transition:.3s;
+      -moz-transition:.3s;
+      -webkit-transition:.3s;
+      transition:.3s;
+    }
+
+    .process-images a img:hover {
+      opacity: 0.75;
+      -o-transition:.3s;
+      -ms-transition:.3s;
+      -moz-transition:.3s;
+      -webkit-transition:.3s;
+      transition:.3s;
+    }
+
+    .images img {
+      width: 100%;
+    }
+
+    #back-to-main {
+      text-align: center;
+      padding-top: 16px;
+      color: #8dc63e;
+      font-weight: 700;
+      font-size: 18px;
+    }
+
+    #back-to-main a:hover {
+      color: #53880a;
+    }
+
+    .footer {
+      background: white;
+    }
+
+    .footer a {
+      box-sizing: border-box;
+      color: #f2f9e5;
+      height: auto;
+      text-align: center;
+      float: left;
+      width: 50%;
+      display: inline-block;
+      padding: 20px;
+      background: #53880a;
+
+    }
+
+    .footer a:hover {
+      background: #70ab1f;
+    }
+
+
+    .footer a.previous {
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .footer a.previous em {
+    }
+
+
+    .footer a.next {
+      font-size: 18px;
+      font-weight: 700;
+      border-left: 2px solid #f2f9e5;
+    }
+
+    .footer a.next em {
+    }
+
+    @media (max-width: 844px) {
+      #title {
+        width: 460px;
+      }
+
+      #subtitle {
+        width: 566px;
+        text-align: center;
+      }
+    }
+
+
+    @media (max-width: 670px) {
+/*      #title {
+        font-size: 36px;
+        width: 512px;
+        text-align: center;
+      }
+*/
+      #subtitle {
+        font-size: 20px;
+        width: 478px;
+        text-align: center;
+      }
+
+      .footer a.next {
+        height: 86px;
+      }
+
+/*change if it's not a cover photo, different formatting*/
+/*      .images img {
+        width: 30%;
+      }
+*/    }
+
+    @media (max-width: 600px) {
+      #page-container {
+        width: 100%
+      }
+
+      #title {
+        width: 345px;
+        font-size: 36px;
+        text-align: center;
+      }
+
+      #subtitle {
+        width: 332px;
+        text-align: center;
+      }
+
+      .section-text li {
+        text-indent: -20px;
+      }
+
+/*change this if it's not a voer photo*/
+      .process-images img {
+        width: 100%;
+        padding-bottom: 10px;
+      }
+    }
+
+/*FIX THIS FOR DIFFERENT PROJECT TITLE LENGTHS*/
+/*    @media (max-width: 425px) {
+      .footer a.previous {
+        height: 109px;
+      }
+
+    }
+*/
+
+  </style>
+
+</head>
+
+
+
+<body>
+  <div id="page-container">
+    <div id="text-container">
+      <div id="title">BERKELEY DESIGN COUNCIL</div>
+      <div id="subtitle">Co-leading Design At Berkeley // Design Leadership</div>
+
+      <div id="cover-images">
+        <span class="images"><img src="./images/bdc-cover.png"/></span>
+      </div>
+
+
+
+      <div class="section-heading">Project Summary</div>
+      <div class="section-text"><strong>Opportunity: </strong>"What is design?" is the question I get asked the most at school.  From my view, there are so many pools of design talent within Berkeley, from design club members to hackers to architects, and so many design resources, from our invention lab to our maker spaces.  But it's all too often that the talent stays siloed within a club or major, that the spaces are hidden and inaccessible, and that people simply don't know where to start when it comes to design.
+
+      <p>For the past year, I've co-lead an organization to create a more collaborative, interdisciplinary design community at Berkeley.  We seek to bring together people from all disciplines--from computer science to anthropology--to make design accessible to our entire student body and create a more collaborative environment where ideas can be exchanged fluidity and creativity magnified.</p></div>
+
+      <p>
+      <div class="section-title">Questions we wanted to answer</div>
+      <div class="section-text">
+        <ul style="list-style-type:none"> <!-- either square or default -->
+          <li>&nbsp;Where do people go when they have questions about design?</li>
+          <li>&nbsp;How can we spread design thinking throughout campus?</li>
+          <li>&nbsp;How can we enhance collaboration?</li>
+        </ul>
+      </div>
+    </p>
+
+      <div class="section-text"><strong>My Role: </strong>I organize weekly meetings with my co-leader where we work with our members to develop workshops and events, communicate with our event sponsors and industry speakers.  I co-lead design workshops of up to 60 people and ensure all the attendees are fed refreshments (kept engaged).
+      </div>
+
+
+      <div class="section-heading">Things We've Done</div>
+
+
+
+      <div class="section-text"><strong>Represent Design At Berkeley: </strong>Design Council was originally a student-run initiative to help design the curriculum, projects, and space for Berkeley's upcoming design minor.  This semester, we rebranded ourselves to become the interdisciplinary epicenter of design at Berkeley, where each design discpline intersects.</div>
+
+      <div class="process-images">
+        <img src="./images/bdc-banner.jpg">
+      </div>
+
+      <div class="section-text"><strong>Create designatberkeley.com: </strong>Part of the rebranding was to create a website that could serve as the one-stop resource to discover what design means at Berkeley and find the resources, classes, and activities to get involved with.</div>
+
+
+      <div class="process-images">
+        <a href="http://designatberkeley.com" target="_blank"><img src="./images/bdc-website.png"></a>
+      </div>
+
+
+      <div class="section-text"><strong>Facilitate workshops: </strong>
+      This year, we ran workshops at CalDay during new student admit weekend and Engineers Week.  Depending on the audience, we give an introduction to design, then walk participants through the human-centered design process with a design challenge so they will have prototyped a design by the end of the hour.</div>
+
+      <div class="process-images">
+        <img src="./images/bdc-calday.png">
+      </div>
+
+
+      <div class="section-text"><strong>Host Keynote Speakers: </strong>Throughout the year, we have industry representatives, like Marissa Louie <i>(pictured)</i>, speak about their experiences in the industry and show students the potential for design after we graduate.  This year, Design Council was able to sit on a panel in a dialogue with John Maeda after his keynote in Berkeley.
+      </div>
+
+      <div class="process-images">
+        <img src="./images/bdc-marissa.jpg">
+      </div>
+
+
+      <div class="section-text"><strong>Host Collaborative Designathons: </strong>We've partnered with Google, Autodesk, and various student organizations, like Design Engineering Collaborative, to put together all-day UX Designathons and overnight 3D printing designathons with over 100 participants.  Each time, they've been a hub for inspiring ideas and creativity. 
+      </div>
+
+      <div class="process-images">
+        <img src="./images/bdc-designathon.jpg">
+      </div>
+
+
+
+      <div class="section-heading">What I've Learned</div>
+      <div class="section-text">
+          <p><strong>Leading workshops:</strong> The less I talk, the more successful the workshop because participants have more free time to be creative. </p>
+          <p><strong>Collaboration: </strong> Working with people from different majors and backgrounds creates the best collaboration because everyone brings a fresh perspective.</p>
+          <p><strong>Pizza:</strong> Free pizza brings all the students to the workshops.</p>
+      </div>
+
+      <div id="back-to-main"><a href="index.html#5" target="_self">Back To Main Page</a></div>
+
+
+
+    </div>
+      <div class="footer">
+        <a class="previous" href="james.html">
+          Previous Project: 
+          <em>&nbsp;Reverse Polaroid</em>
+        </a>
+
+        <a class="next" href="glass.html">
+          Next Project: 
+          <em>&nbsp;Glass On Patrol</em>
+        </a>
+      </div>
+
+  </div>
+</body>
+</html>
+
+
+
+
