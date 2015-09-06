@@ -52,8 +52,16 @@
         text-decoration: none;
       }
 
+    #menu {
+      background-image: url("./images/menu-icon.png");
+      width: 60px;
+      height: 60px;
+      position: fixed;
+    }
 
-
+    #menu:hover {
+      background-image: url("./images/menu-icon-hover.png");
+    }
 
     #page-container {
       width: 90%;
@@ -257,7 +265,8 @@
 
 <body>
   <div id="page-container">
-    <div id="text-container">
+    <a href="index.html#3"><div id="menu"></div></a>
+      <div id="text-container">
       <div id="title">IBM DESIGN: MAELSTROM</div>
       <div id="subtitle">Creating Smarter Auto Insurance With IoT // UX Design</div>
 
