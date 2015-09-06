@@ -448,6 +448,14 @@ a:hover{
 	font-weight: 100;
 }
 
+#profile-ibm{
+	font-weight: 600;
+}
+
+#profile-eecs{
+	font-weight: 600;
+}
+
 #ice-cream-pic{
 	margin-right: auto;
 	margin-left: auto;
