@@ -1,8 +1,7 @@
-
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Serena // CoDi</title>
+  <title>Serena // Owl</title>
   <meta name="title" content="Serena Chang" />
   <meta name="description" content="Serena Chang portfolio website" />
   <link rel="image_src" href="/images/notify_better_image.png" />
@@ -22,7 +21,7 @@
   <style>
 
     body {
-      background: #00b2e0;
+      background: #e5beff;
       text-align: left;
       font-family: 'Source Sans Pro';
       -webkit-font-smoothing: antialiased;
@@ -68,7 +67,7 @@
 
     #page-container {
       width: 90%;
-      background: #f5fbfc;
+      background: #fcf8ff;
       margin: 0px auto;
     }
 
@@ -344,26 +343,26 @@
   <div id="page-container">
     <a href="index.html#6"><div id="menu"></div></a>
     <div id="text-container">
-      <div id="title">CODI</div>
-      <div id="subtitle">Diabetes Companion Watch & Health Tracker // Smart Watch App Design</div>
+      <div id="title">OWL</div>
+      <div id="subtitle">Night Safety Backpack // Critical Making Spring 2016</div>
 
-      <div class="video"><iframe width="420" height="315" src="https://www.youtube.com/embed/RQaI3ex5PPM" frameborder="0" allowfullscreen></iframe></div>
-
+      <div class="video"><iframe width="420" height="315" src="https://www.youtube.com/watch?v=ThpB1Gd3bTc" frameborder="0" allowfullscreen></iframe></div>
 
       <div class="section-heading">Project Summary</div>
-      <div class="section-text"><strong>Impact and opportunity: </strong>40 children are diagnosed with Type 1 Diabetes per day.  Children living with the illness must carefully track their carbohydrate and nutrition intake to determine their insulin dosage - an often arduous and difficult task.  When IEOR 170 professor, Ken Goldberg, gave the prompt, "Design an educational toy for children aged 5-7," my team saw the opportunity to reduce the stigma of Diabetes make living with Diabetes a positive and rewarding learning experience. 
+      <div class="section-text"><strong>Impact and opportunity: </strong>Night safety has become growing issues these past semesters around the Berkeley campus.  Several sexual assault reports have left many students concerned about their safety walking home alone after dusk.  “I was going to this event on Northside this evening, but honestly, I’m too scared to walk home after dark so I didn’t go,” is not an uncommon statement to hear.  My team saw an opportunity to create a wearable to address this growing concern and help students get home safely.
 
 
-      <p><strong>Concept: </strong>CoDi is a companion wrist watch and nutritional tracker that encourages a child with Type I Diabetes to adopt and maintain healthy diet and lifestyle habits alongside a tamagotchi-like character.  Features include: </p>
+      <p><strong>Concept: </strong>Owl is a wearable backpack that remains alert when a user is walking home at night.  Features include: </p>
 
         <ul style="list-style-type:none" > <!-- either square or default -->
-          <li>&nbsp;Allowing simple food intake input to automatically calibrate insulin pumps.</li>
-          <li>&nbsp;A companion character that reflects the user - if the companion character feels sick, they may suggest activities for the child to complete to maintain normal blood sugar levels.</li>
-          <li>&nbsp;A token store where children can exchange tokens for upgrades to their companion character.</li>
+          <li>&nbsp;A night-vision live stream video so the user’s friends can tune in and “watch their back” during their walk home.</li>
+          <li>&nbsp;Sonar sensors on the back of the backpack which control RGB LEDs on the front strap to subtly indicate how far away the closest person is from the user without distracting the user.</li>
+          <li>&nbsp;A "panic" button to text the user's location to their friends if an incident occurs.</li>
+          <li>&nbsp;A "report" button users can press when they feel uneasy that will flag their GPS location on a heatmap.  Over time, the heatmap will be crowdsourced with the density of reports and pedestrians can judge which routes can get them to their destination the safest.</li>
         </ul>
 
 
-      <p><strong>My role: </strong>I was a member in a group of 9 undergraduates.  Throughout the project, I interviewed users, illustrated multiple mockup iterations, and created the video for the project.</p>
+      <p><strong>My role: </strong>I was part of a team of 4 undergrad and grad students.  I built and wired the hardware components, and collaboratively wrote the software code to link the hardware components and database together.</p>
       </div>
 
 
@@ -378,31 +377,35 @@
       <div class="section-title">Questions we wanted to answer</div></p>
       <div class="section-text">
         <ul style="list-style-type:none"> <!-- either square or default -->
-          <li>&nbsp;What is the biggest challenge facing children with diabetes?</li>
-          <li>&nbsp;How can we incorporate technology that is simplistic enough that 5 year olds can use it and not be distracted by it?</li>
-          <li>&nbsp;How can we create something that's unobtrusive to daily life?</li>
+          <li>&nbsp;How can we give users peace of mind when walking home?</li>
+          <li>&nbsp;How can we help users become more aware of their surroundings and more prepared to react??</li>
+          <li>&nbsp;How can we design a wearable to be subtle, yet effective?</li>
         </ul>
       </div>
 
-      <div class="section-title">Questions we asked our users (diabetic children and parents)</div>
+      <div class="section-title">Questions we asked our users</div>
       <div class="section-text">
         <ul style="list-style-type:none">
-          <li>&nbsp;What is the biggest challenge with having Diabetes?</li>
-          <li>&nbsp;What do you usually do when you aren't feeling well at school?</li>
-          <li>&nbsp;What is the biggest difference that Diabetes has made in your life?</li>
+          <li>&nbsp;What makes you feel unsafe?</li>
+          <li>&nbsp;Assuming no limitations, what would you want with you to feel safer while walking at night?</li>
         </ul>
       </div>
 
-       <div class="section-text"><strong>How we developed our solution: </strong>Initially the project prompt was to create an educational children's toy.  Our team wanted to take the definition of "education" outside the classroom and wanted to tackle general health education.  We saw a need with Diabetes, because no product in the current market can accompany a young student into the classroom and encourage a healthier lifestyle.
+       <div class="section-text"><strong>How we developed our solution: </strong>Initially, we were inspired by the concept of an owl perched on a person’s shoulder to “keep watch” over them while they walked in the dark.  Our early sketches and 3D prints revolved around the idea of the owl.  Our first iteration, we modelled an owl to sit on a user’s shoulder and carry the electronics inside.  However, we discovered some significant space constraints with the owl.  It was very difficult to house all of our components (raspberry pi with camera module, sonar sensor, buttons, and LEDs, while maintaining a subtle and unobtrusive form factor.  
 
+       <p>In our next iteration, we moved the form factor off the user’s shoulder and designed a backpack attachment.  The difficulty with this concept was that everything had to be automated and manual control of the object was virtually impossible without requiring the user to awkwardly reach behind their backpack to turn on or off a trigger.</p>
 
-      <p>From our research, we developed personas of Diabeted children as well as parents and teachers who monitor the children.  We began brainstorming solutions for our personas, which ranged anywhere from insulin pens to Club Penguin-like communities.  After combining and narrowing down the ideas, we decided to create a Tamagotchi-like experience on a smart watch interface that could accompany a student anywhere without being obstrusive.  A major pain point for children is their need to rigorously document their food intake.  We sought to gamify and simplify the experience for them and give parents peace of mind that their health is being monitored.  We sketched <strong>low-fidelity interfaces</strong> and interactions for our watch, a sample shown below.</p>
+		<p>Finally, we decided to utilize the entire space of a backpack to design a standalone wearable backpack that housed all the features and technology we initially wanted.  This design worked well in the end because we did not have trouble housing the hardware components, and the design could remain subtle.
+		</p>
+
 
       <div id="cover-images">
         <span class="images"><img src="./images/codi-process-cover.png"/></span>
       </div>
 
-      <p>After fleshing out the content and functionality with these sketches, we were able to mock them up digitally to test how they would appear on a watch screen.  Some of the <strong>Illustrator mockups</strong> are shown below.</p>
+
+
+      <p>CHANGE THIS TO MAKE NEW : After fleshing out the content and functionality with these sketches, we were able to mock them up digitally to test how they would appear on a watch screen.  Some of the <strong>Illustrator mockups</strong> are shown below.</p>
 
       <div class="process-images">
         <img src="./images/codi-image1.png">
@@ -415,11 +418,21 @@
 
       </div>
 
-      <div class="section-heading">What I Learned</div>
+
+      <div class="section-heading">Technology used</div>
       <div class="section-text">
-          <p><strong>Tiny interfaces: </strong>Watches give very little screen real estate - we slimmed down on information and redesigned the flow many times before the interactions became intuitive.</p>
-          <p><strong>Purpose: </strong>It's more challenging, but also more impactful to design an educational that teaches a lifestyle, not simply a skill.</p>
+          <p><strong>Hardware and digital fabrication (PUT WIRING DIAGRAM IN BELOW): </strong>We used a Raspberry Pi + camera module, Adafruit Bluefruit 32u4 Feather, backpack, laser cutter for cutting and etching, acrylic, sonar sensors, LEDs, speakers, push buttons</p>
+          <p><strong>Software: </strong>Rhino, Python, Arduino, Firebase, Flask, Google Maps API</p>
+	
+	      <div id="cover-images">
+	        <span class="images"><img src="./images/codi-process-cover.png"/></span>
+	      </div>
+
+
       </div>
+
+
+
 
       <div id="back-to-main"><a href="index.html#6" target="_self">Back To Main Page</a></div>
 
@@ -429,18 +442,21 @@
       <div class="footer">
         <a class="previous" href="flare.html">
           Previous Project: 
-          <em>&nbsp;Flare</em>
+          <em>&nbsp;Film and Video Editing</em>
         </a>
 
         <a class="next" href="film.html">
           Next Project: 
-          <em>&nbsp;Film and Video Editing</em>
+          <em>&nbsp;RADAR</em>
         </a>
       </div>
 
   </div>
 </body>
 </html>
+
+
+
 
 
 
