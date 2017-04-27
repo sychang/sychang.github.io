@@ -69,7 +69,7 @@
  -->
       <div class="heading">Welcome to ReEmploy!</div>
 
-        <div class="row" style="margin-top:50px">
+        <div class="row" style="margin-top:24px">
             <div class="col-md-6">
                 <h3>Basic Information</h3>
 
@@ -117,8 +117,7 @@
             </div>
             <div class="col-md-6">
                 <h3>Refugee status verification</h3>
-                <p>For verification purposes, we require that each refugee register through one of our partnered nonprofit organizations.</p>
-                <p>If you are registered with one of these organizations, then you should have been provided with a one-time signup key.  Please enter it into the box below:</p>
+                <p>To verify your status as a refugee, please enter your non-profit key below:</p>
                 <form>
                     <div class="form-group">
                         <div>
@@ -130,22 +129,20 @@
                 <hr>
 
                 <h3>Skills</h3>
-                <p>As a tasker, you will have the ability to look through jobs &amp; tasks that match your current skillset.  Additionally, we optionally offer you potential connections with individuals who have skills that you would like to learn or acquire.</p>
-
-                <form>
-                    <div class="form-group">
-                        <label class="control-label" for="skills-input">Your Skills and Abilities</label>
-                        <div>
-                            <input type="name" class="form-control" id="skills-input" placeholder="Skills">
-                        </div>
-                    </div>
+                <p>Select your skills from the list below.  We'll match you with tasks that match your skill sets!</p>
+                <form action="/action_page.php">
+                  <input type="checkbox" name="skill" value="cleaning"> Cleaning<br>
+                  <input type="checkbox" name="skill" value="cooking" checked> Cooking<br>
+                 <input type="checkbox" name="skill" value="furniture" checked> Furniture assembly<br>
+                 <input type="checkbox" name="skill" value="pet" checked> Pet care<br>
+                 <input type="checkbox" name="skill" value="repair" checked> Electronic repair<br>
                 </form>
 
-                <h3>Tell us about yourself</h3>
+
+                <h3>Tell us about yourself!</h3>
 
                 <form>
                     <div class="form-group">
-                        <label class="control-label" for="skills-input">Tell us your story!</label>
                         <div>
                             <input type="name" class="form-control" id="skills-input" placeholder="I immigrated from...">
                         </div>
