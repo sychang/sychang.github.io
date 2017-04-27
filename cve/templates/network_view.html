@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <!-- {% block title %} --><title>Local Library</title><!-- {% endblock %} -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,700" rel="stylesheet">
+  
+  <!-- Add additional CSS in static file -->
+  <!-- {% load static %} -->
+  <link rel="stylesheet" href="../static/admin/css/base.css">
+  <link rel="stylesheet" href="../static/admin/css/profiles.css">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .nav {
+        overflow: hidden;
+        background-color: #0B5D78;
+        position: fixed; /* Set the navbar to fixed position */
+        top: 0; /* Position the navbar at the top of the page */
+        width: 100%; /* Full width */
+        z-index: 999;
+/*        box-shadow: 1px 1px #444;
+*/    }
+
+    /* Links inside the navbar */
+    .nav a {
+        float: left;
+        display: block;
+        color: #F4FCFF;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    .nav a:hover {
+        float: left;
+        display: block;
+        color: #56ccf2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    .container-fluid {
+      padding-top: 50px;
+    }
+/*6C6D6D*/
+    .connection-name {
+      text-align: center;
+      margin-top: 8px;
+    }
+    .connection-skills{
+      padding-bottom: 8px;
+      text-align: center;
+    }
+
+    .heading {
+      font-size: 36pt;
+      margin: 20px auto 12px auto;
+      width: 294px;
+      color: #fff;
+      font-weight: 700;
+    }
+
+    .subheading {
+      margin: 0px auto 20px auto;
+      width: 80%;
+    }
+
+    .connection-message {
+      background-color: #56ccf2; /* blueish */
+      border: none;
+      border-radius: 3px;
+      color: white;
+      padding: 6px 30px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
+
+    .connection-message:hover {
+      background-color: #88E0FD; /* lighter blue */
+      border: none;
+      border-radius: 3px;
+      color: black;
+      padding: 6px 30px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
+
+    .message-box {
+      margin: 0px auto;
+      width: 126px;
+    }
+
+    .headshot {
+      margin: 0px auto;
+      width: 100px;
+    }
+
+    .col-md-12 {
+      margin-bottom: 8px;
+      background-color: #F4FCFF;
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+
+    .row {
+      margin: 0px auto;
+      width: 80%;
+    }
+
+
+    .profile_icon {
+      height: 80px;
+      width: 80px;
+    }
+  </style>
+
+</head>
+
+<body>
+    <div class="nav">
+      <a href="refugee_profile.html" target="_self">Profile</a>
+      <a href="base_generic.html" target="_self">Find work</a>
+      <a href="network_view.html" target="_self">Your network</a>
+    </div>
+
+  <div class="container-fluid">
+
+  <div class="heading">Your Network</div>
+  <div class="subheading">Here are the people you have worked with in the past. You can check out what skills they have and message them to learn from them or simply chat!</div>
+    <div class="row">
+
+      <div class="col-md-12">
+        <div class="headshot"><img src="../static/img/audrey.png" style="height:100px;"></div>
+        <div class="connection-name"><b>Audrey Tsai</b></div>
+        <div class="connection-skills">User experience design, software engineering, carpentry, hot air balloon navigation</div>
+        <div class="message-box">
+          <a class="connection-message" href="message_translate.html" target="_blank">Message</a>
+        </div>
+      </div>
+
+      <div class="col-md-12">
+        <div class="headshot"><img src="../static/img/nikhil.png" style="height:100px;"></div>
+        <div class="connection-name"><b>Nikhil Patel</b></div>
+        <div class="connection-skills">Fabric painting, sewing, web development, being cool</div>
+        <div class="message-box">
+          <a class="connection-message" href="message_translate.html" target="_blank">Message</a>
+        </div>
+      </div>
+
+      <div class="col-md-12">
+        <div class="headshot"><img src="../static/img/michael.png" style="height:100px;"></div>
+        <div class="connection-name"><b>Michael Chen</b></div>
+        <div class="connection-skills">Backend software engineering, eating pasta, hip hop dancing</div>
+        <div class="message-box">
+          <a class="connection-message" href="message_translate.html" target="_blank">Message</a>
+        </div>
+      </div>
+
+    </div>
+</body>
+</html>
+
+
+

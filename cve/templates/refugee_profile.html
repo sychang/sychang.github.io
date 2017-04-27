@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <!-- {% block title %} --><title>Local Library</title><!-- {% endblock %} -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,700" rel="stylesheet">
+  <!-- Add additional CSS in static file -->
+  <!-- {% load static %} -->
+  <link rel="stylesheet" href="../static/admin/css/base.css">
+  <link rel="stylesheet" href="../static/admin/css/profiles.css">
+</head>
+
+<body>
+    <div class="nav">
+      <a href="refugee_profile.html" target="_self">Profile</a>
+      <a href="base_generic.html" target="_self">Find work</a>
+      <a href="network_view.html" target="_self">Your network</a>
+    </div>  
+    <div class="container-fluid">
+
+    <div class="row">
+      <div class="col-sm-4">
+
+        <div class = "profile_container"> 
+
+          <div class = "profile_icon">
+            <img src="../static/img/refugee_prof.png" style="width:100%;">
+           <!--  <img src="pic_mountain.jpg" alt=" " style="width:304px;height:228px;"> -->
+
+          </div> 
+          
+          <div class = "profile_text"> 
+            <h1> Hosein </h1>
+            <p> Country of Origin: Greece </p>
+            <p> Current Location: London </p>
+            <p style="color:#56ccf2"> 20 Mutual Friends </p>
+          </div>
+          <div class = "profile_skills"> 
+            <h1> Skills </h1> 
+            <div class = "skill_icon">
+              <img src="../static/img/computer.png" style="padding-top:8px; margin-left:3px;width:40px;">
+            </div> 
+            <div class = "skill_icon">
+              <img src="../static/img/home.png" style="padding-top:5px; margin-left:3px;width:40px;"">
+            </div> 
+            <div class = "skill_icon">
+              <img src="../static/img/clean.png" style="padding-top:8px; margin-left:3px;width:40px;">
+            </div> 
+          </div>
+          <div class = "profile_badges"> 
+            <h1> Badges </h1> 
+            <img src="../static/img/refugee.png" style="height:50px;">
+          </div>
+
+        <div class="work-button">
+          <a class="view-network" href="base_generic.html">Find work!</a>
+        </div>
+
+        <div class="network-button">
+          <a class="view-network" href="network_view.html">View Network</a>
+        </div>
+
+
+        </div> 
+      <!-- {% block sidebar %} -->
+     <!-- {% endblock %} -->
+      </div>
+      <div class="col-sm-7">
+        <div class = "story_container">
+          <h1> Hosein's Story </h1> 
+          <p> 
+
+          <br> Hosein is an Afghan Civil Engineer student. He was born in Iran and along with his mother and sister, they sailed off from the Turkish coast heading for Samos Island in Greece. Their boat sunk at high seas on 11 July 2014 and his mother and sister are missing. Hosein and his three other sisters, two in France and one in Germany, have left no stone unturned in trying desperately to find a clue that would lead them to their beloved ones: <br> 
+
+          <br> The past ten days were the most agonizing days of my life. On 10 July, along with with my mother Fatme and my sister Shokoufeh, we sailed off in a 12 meter boat after having paid 9,000 Euro for the three of us. It was overcrowded as the smugglers had crammed around 40 men, women and children on that little boat.<br> 
+
+          <br> After several hours at sea, the captain informed us that he was no longer in command of the boat which suddenly started taking in water.<br> 
+
+          <br> Among terrified screams, I tried to elbow myself to reach the small cabin where my mother and sister were, but I was hurled overboard by panicking passengers. I was very desperate. In the sea, the currents were so strong that I could hardly swim. It was only until several hours later, namely on Friday 11 July at noon, that I along with another, almost unconscious passenger, were spotted by an Italian sailing boat and were transferred to Chios Island. Other survivors were brought to Samos. Fifteen Syrians and Afghans have been rescued. The shipwreck so far claims the lives of six persons who were found by the Greek and Turkish Coast Guards while the rest are still missing.<br> 
+
+          <br> Other family members of missing people with whom we were in the same boat, are in Germany and in Denmark while I am currently in France with my two sisters and their families. I traveled legally on a travel document issued by the French Embassy in Athens. All the families of missing people are appealing that the search and rescue operations of the authorities continue unabated. We urge the Greek authorities to bring up the boat as there were women and small children in the cabin who may have been trapped.<br> 
+
+          <br> As for my missing mother and sister, another passenger who left the boat after me told me that they were not trapped in the cabin. Since they had very good life jackets, they must have survived. I am sure they are alive. I will not abandon the search. I expect and hope for good news. But even if the news were bad I still want to know!<br> 
+
+          <br> Source: UNHCR UN Refugee Agency <br> 
+          
+        </div>
+
+        <div class = "story_container">
+          <h1> Recent Tasks and Reviews  </h1> 
+          <div class = "task"> 
+            <h1> Computer Repair </h1>
+            <p> Fixed the computers for Middleton Middle School</p>
+            <img src="../static/img/five.png" style="height:30px;">
+            <p class = "review">"Hosein came on time and knew exactly what to do! Excellent computer repair."</p> 
+          </div> 
+
+          <div class = "task"> 
+            <h1> Plumbing </h1>
+            <p> Cleared clogged toilets </p>
+            <img src="../static/img/four.png" style="height:30px;">
+            <p class = "review"> "Very kind and polite gentleman. Finished task quickly. "</p> 
+          </div> 
+
+      <!-- {% block content %}{% endblock %} -->
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Implementation Test</title>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="page-header">
+				<h1>Instant Message Translation <small>Powered by the Google Translate API</small></h1>
+			</div>
+			<div class"row">
+				<div class="col-md-5">
+					<form class="form">
+						<textarea id="text-entry" class="form-control" rows="5"></textarea>
+						<button id="submit-text" class="btn btn-default pull-right" style="margin-top:20px;">Submit</button>
+					</form>
+				</div>
+
+				<div class="col-md-6">
+					<div id="translated-text"></div>
+				</div>
+			</div>
+		  </div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+
+			});
+
+			function prependToText(text) {
+				$("#translated-text").prepend("<p style=\"max-width:200px; border: 1px black solid; border-radius: 10px; padding-left: 15px; padding-right: 15px;\">" + text + "</p>");
+			}
+
+			$("#submit-text").on("click", function() {
+				console.log($("#text-entry").val());
+				$.ajax({
+					url: "https://translation.googleapis.com/language/translate/v2",
+					type: "get",
+					data: {
+						"key": "AIzaSyAjMG3QHcrs8OoMUjqarlix-67KHC-JHec",
+						"source": "en",
+						"target": "es",
+						"q": $("#text-entry").val(),
+					},
+					success: function(result) {
+						prependToText(result['data']['translations'][0]['translatedText']);
+					},
+					error: function(result) {
+						alert("There was an error.  Please try again.");
+						console.log(result);
+					},
+				});
+				$("#text-entry").val("");
+				return false;
+			});
+
+		</script>
+	</body>
+</html>

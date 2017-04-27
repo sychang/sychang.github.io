@@ -1,0 +1,131 @@
+body {
+	font-family: 'Roboto', sans-serif;
+    background-color: #56ccf2;
+    padding-top: 48px;
+}
+
+h1 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	font-size: 36px;
+}
+
+    .nav {
+        overflow: hidden;
+        background-color: #0B5D78;
+        position: fixed; /* Set the navbar to fixed position */
+        top: 0; /* Position the navbar at the top of the page */
+        width: 100%; /* Full width */
+        z-index: 999;
+/*        box-shadow: 1px 1px #444;
+*/    }
+
+    /* Links inside the navbar */
+    .nav a {
+        float: left;
+        display: block;
+        color: #F4FCFF;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    .nav a:hover {
+        float: left;
+        display: block;
+        color: #56ccf2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+.profile_container {
+/*    border: 1px solid #56ccf2;
+*/    
+
+	background-color: #F4FCFF;
+    padding: 20px;
+    margin-top: 48px;
+    box-shadow: 1px 1px #C4C4C4;
+ }
+
+ .story_container {
+/*    border: 1px solid #56ccf2;
+*/    
+	background-color: #F4FCFF;
+    padding: 20px;
+    margin-top: 48px;
+    box-shadow: 1px 1px #C4C4C4;
+ }
+
+.profile_text { 
+	text-align: center; 
+	margin: 25px; 
+
+}
+
+.profile_icon {
+	display: block;
+	text-align: center; 
+	position: relative;
+} 
+
+.skill_icon {
+	height: 50px;
+	width: 50px; 
+	border-radius: 50px; 
+	border: 1px solid #82b9d6;  
+	display: inline-block; 
+	margin-bottom: 30px;
+}
+
+.task {
+/*	border: 1px solid #82b9d6; 
+*/	
+	background-color: #fff;
+	box-shadow: 2px 2px 2px 2px #C4C4C4;
+	padding: 20px; 
+	margin: 10px; 
+}
+
+.review {
+	color: #56ccf2;
+}
+
+.col-sm-4 {
+	margin-left: 3%;
+}
+
+.network-button {
+  margin: 24px auto 8px;
+  width: 160px;
+}
+.work-button {
+  margin: 24px auto 8px;
+  width: 135px;
+}
+
+.view-network {
+  background-color: #56ccf2; /* blueish */
+  border: none;
+  border-radius: 3px;
+  color: white;
+  padding: 6px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.view-network:hover {
+  background-color: #88E0FD; /* lighter blue */
+  border: none;
+  border-radius: 3px;
+  color: black;
+  padding: 6px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+

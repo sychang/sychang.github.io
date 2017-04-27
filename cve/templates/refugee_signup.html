@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <style>
+
+    body {
+        font-family: 'Roboto', sans-serif;
+        background: #56ccf2;
+    }
+
+
+/*    .container {
+        margin-top: 60px; 
+    }*/
+
+    .heading {
+      font-size: 36pt;
+      margin: 20px auto 12px auto;
+      width: 495px;
+      color: #fff;
+      font-weight: 700;
+    }
+
+
+    .finish {
+      background-color: #F4FCFF; /* blueish */
+      border: none;
+      border-radius: 3px;
+      color: black;
+      padding: 6px 30px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    .finish:hover {
+      background-color: #88E0FD; /* lighter blue */
+      border: none;
+      border-radius: 3px;
+      color: black;
+      padding: 6px 30px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
+
+    .finish-button {
+      margin: 0px auto 24px;
+      width: 134px;
+
+    }
+  </style>
+
+  </head>
+  <body>
+
+    <div class="container">
+
+<!--     <div class="container-fluid">
+ -->
+      <div class="heading">Welcome to ReEmploy!</div>
+
+        <div class="row" style="margin-top:50px">
+            <div class="col-md-6">
+                <h3>Basic Information</h3>
+
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label" for="name-input">Full Name</label>
+                        <div class="col-sm-9">
+                            <input type="name" class="form-control" id="email-input" placeholder="Name">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label" for="address-input">Current Address</label>
+                        <div class="col-sm-9">
+                            <input type="name" class="form-control" id="address-input" placeholder="Address">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label" for="country-input">Country of Origin</label>
+                        <div class="col-sm-9">
+                            <input type="name" class="form-control" id="country-input" placeholder="Country">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label" for="email-input">Email Address</label>
+                        <div class="col-sm-9">
+                            <input type="name" class="form-control" id="email-input" placeholder="Email">
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <h3>Upload a Profile Picture</h3>
+
+                    <div class="row">
+                        <div class="col-sm-9 col-sm-offset-3">
+                            <img src="http://sunfieldfarm.org/wp-content/uploads/2014/02/profile-placeholder.png" class="img-responsive" alt="Responsive image" style="padding:0px 100px 40px 100px">
+                        </div>
+                    </div>
+
+
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h3>Refugee status verification</h3>
+                <p>For verification purposes, we require that each refugee register through one of our partnered nonprofit organizations.</p>
+                <p>If you are registered with one of these organizations, then you should have been provided with a one-time signup key.  Please enter it into the box below:</p>
+                <form>
+                    <div class="form-group">
+                        <div>
+                            <input type="name" class="form-control" id="key-input" placeholder="Key">
+                        </div>
+                    </div>
+                <form>
+                <p>If you are not registered with an organization yet, please <a href="#">go here</a> to find out about nonprofits near you.  We would love to have you on the platform after you have been verified by one of our partners.  We hope to see you soon!</p>
+                <hr>
+
+                <h3>Skills</h3>
+                <p>As a tasker, you will have the ability to look through jobs &amp; tasks that match your current skillset.  Additionally, we optionally offer you potential connections with individuals who have skills that you would like to learn or acquire.</p>
+
+                <form>
+                    <div class="form-group">
+                        <label class="control-label" for="skills-input">Your Skills and Abilities</label>
+                        <div>
+                            <input type="name" class="form-control" id="skills-input" placeholder="Skills">
+                        </div>
+                    </div>
+                </form>
+
+                <h3>Tell us about yourself</h3>
+
+                <form>
+                    <div class="form-group">
+                        <label class="control-label" for="skills-input">Tell us your story!</label>
+                        <div>
+                            <input type="name" class="form-control" id="skills-input" placeholder="I immigrated from...">
+                        </div>
+                    </div>
+                </form>
+
+
+                <div class="finish-button">
+                  <a class="finish" href="refugee_profile.html">Submit</a>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>

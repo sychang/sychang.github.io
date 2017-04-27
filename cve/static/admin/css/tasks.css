@@ -1,0 +1,85 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: #56ccf2;
+}
+
+.header {
+	display: inline-block; 
+}
+
+.header h1 {
+	float: left; 
+	color: #56ccf2;
+	font-style: bold; 
+}
+
+h2 {
+	color: #56ccf2;
+}
+
+.details {
+	padding-left: 20px; 
+}
+
+.box {
+/*	box-shadow: 1px 1px #C4C4C4;
+	border: 1px solid #82b9d6;*/
+	display: block;
+	margin: 0px auto;
+	width: 70%;
+	height: 20%; 
+	padding: 2%;
+/*	margin-top: 12px;
+*/	background-color: #F4FCFF;
+}
+
+.reviews {
+	margin-top: 5%; 
+	margin-bottom: 5%; 
+}
+
+.review {
+	padding-left: 20px; 
+}
+
+.btn {
+	display: block; 
+	margin: 0 auto; 
+}
+
+.request-task {
+  background-color: #56ccf2; /* blueish */
+  border: none;
+  border-radius: 3px;
+  color: white;
+  padding: 6px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.request-task:hover {
+  background-color: #88E0FD; /* lighter blue */
+  border: none;
+  border-radius: 3px;
+  color: black;
+  padding: 6px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.request-button {
+  margin: 0px auto;
+  width: 157px;
+}
+
+.title {
+	font-size: 24pt;
+	font-weight: 700;
+	margin-bottom: 16px;
+}
+
+

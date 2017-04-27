@@ -1,0 +1,69 @@
+body {
+	font-family: 'Roboto', sans-serif;
+    background-color: #56ccf2;
+}
+
+.sidebar-nav {
+	margin-top: 40%;
+}
+
+.title {
+	text-align: center; 
+	font-size: 48px; 
+	margin-top: 24px; 
+	font-weight: 700;
+	color: #fff;
+}
+
+.jobbox {
+	height: 300px; 
+	width: 275px;
+	/*border: 1px solid black;*/
+	display: inline-block;
+    margin: 1%;
+    background-color: #F4FCFF;
+    box-shadow: 1px 1px #C4C4C4;
+    text-align: center; 
+  	padding-top: 12px; 
+}
+
+.jobbox:hover {
+	height: 300px; 
+	width: 275px;
+	/*border: 1px solid black;*/
+	display: inline-block;
+    margin: 1%;
+    background-color: #EEF0F5;
+    box-shadow: 1px 1px #C4C4C4;
+    text-align: center; 
+  	padding-top: 12px; 
+}
+
+.filter {
+	font-weight: 700;
+	margin-bottom: 12px;
+}
+
+.jobim {
+	margin-bottom: 8px;
+}
+
+
+.time {
+	font-size: 14px; 
+}
+
+.box:hover {
+	opacity: 0.5;
+}
+
+.task-title {
+	font-size: 18px; 
+	font-weight: 700;
+	color:black;
+}
+
+.skills {
+	margin-left: 20px;
+    font-size: 14px;
+}
