@@ -21,6 +21,56 @@
 
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
   <script type="text/javascript" src="jquery.onepage-scroll.js"></script>
+
+
+<!-- start job markup -->
+  <script type="application/ld+json"> {
+    "@context" : "http://schema.org/",
+    "@type" : "JobPosting",
+    "title" : "Food Preparer",
+    "description" : "<p>Prepare three meals a day for teammates.</p>
+      <p><strong>Educational Requirements:</strong> Bachelor's Degree in Culinary Arts.</p>
+      <p><strong>Required Experience:</strong> At
+      least 1 year of food preparation experience.</p>",
+    "identifier": {
+      "@type": "PropertyValue",
+      "name": "Serena's Kitchen",
+      "value": "1234567"
+    },
+    "datePosted" : "2017-08-23",
+    "validThrough" : "2017-12-31T00:00",
+    "employmentType" : "CONTRACTOR",
+    "hiringOrganization" : {
+      "@type" : "Organization",
+      "name" : "Serena's Kitchen Sink",
+      "sameAs" : "http://serenachang.me/"
+    },
+    "jobLocation" : {
+      "@type" : "Place",
+      "address" : {
+        "@type" : "PostalAddress",
+        "streetAddress" : "2000 Charleston Rd.",
+        "addressLocality" : "Mountain View",
+        "addressRegion" : "CA",
+        "postalCode" : "94043",
+        "addressCountry": "US"
+      }
+    },
+    "baseSalary": {
+      "@type": "MonetaryAmount",
+      "currency": "USD",
+      "value": {
+        "@type": "QuantitativeValue",
+        "value": 40.00,
+        "unitText": "HOUR"
+      }
+    }
+  }
+  </script>
+
+
+<!-- end job markup -->
+
   <link href='onepage-scroll.css' rel='stylesheet' type='text/css'>
   <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
   <style>
